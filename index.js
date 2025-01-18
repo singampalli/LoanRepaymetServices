@@ -6,11 +6,12 @@ const data = require("./db.json");
 const fs = require("fs");
 
 const users = data.users;
+const loans = data.loans;
 const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
-saveUsers = (username,email, password) => {
+SaveData = (username,email, password) => {
   users.push({
     id: users.length+1,
     username: username,
@@ -23,10 +24,27 @@ saveUsers = (username,email, password) => {
     console.log("db.json has been saved!");
   });
 };
+app.post("/loans", (req, res) => {
+  const { username,status} = req.body;
+  const userloans = loans.filter((loan) => loan.username === username && loan.loanStatus === status);
+  const response = { data:userloans,total:userloans.length }
+  if(userloans.length>0)
+    res.status(200).send(response);
+  else
+    res.status(201).send(response);
+});
+app.post("/loan", (req, res) => {
+  const {loanId} = req.body;
+  const loandDetails = loans.filter((loan) => loan.id == loanId);
+  if(loandDetails.length>0)
+    res.status(200).send(loandDetails);
+  else
+    res.status(201).send(loandDetails);
+});
 app.post("/register", (req, res) => {
   const { username,email, password } = req.body;
   const hashedPassword = bcrypt.hashSync(password, 8);
-  saveUsers(username,email, hashedPassword);
+  SaveData(username,email, hashedPassword);
   res.status(201).send("User registered successfully");
 });
 
