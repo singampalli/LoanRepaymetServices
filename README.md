@@ -59,12 +59,11 @@ Response:
 
 #### 201: User registered successfully
 
-Login a User
+### Login a User
 URL: /login
-
 Method: POST
-
 Request Body:
+
 ```sh
 json
 {
@@ -72,18 +71,16 @@ json
   "password": "examplepassword"
 }
 ```
-Response:
+#### 200: Response:
 
-200: Successful login, returns auth token
-
+Successful login, returns auth token
 401: Invalid credentials
 
-Retrieve Loans for a User
+### Retrieve Loans for a User
 URL: /loans
-
 Method: POST
-
 Request Body:
+
 ```sh
 json
 {
@@ -91,31 +88,28 @@ json
   "status": "active"
 }
 ```
-Response:
+#### Response:
 
 200: Returns the user's loans and the total count
-
 201: No loans found
 
-Retrieve Loan Details by Loan ID
+### Retrieve Loan Details by Loan ID
 URL: /loan
-
 Method: POST
-
 Request Body:
+
 ```sh
 json
 {
   "loanId": 1
 }
 ```
-Response:
+#### Response:
 
 200: Returns the loan details
-
 201: Loan not found
 
-Dependencies
+### Dependencies
 express
 body-parser
 jsonwebtoken
