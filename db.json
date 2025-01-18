@@ -12,5 +12,228 @@
       "email": "username2@email.com",
       "Password": "$2a$08$dbUMsEzG3pbdHaLU68J79u8o6inGqSMAuIyWBK.9b6ue0DLguIfQy"
     }
-  ]
+  ],
+  "loans": [
+    {
+        "id": 1,
+        "loanAccountNumber": "10000000987654",
+        "loanType": "car",
+        "loanAmount": "100000",
+        "loanEMI": "9999",
+        "loanStartDate": "01-01-2024",
+        "loanEndDate": "01-01-2025",
+        "loanStatus": "closed",
+        "username": "username1"
+    },
+    {
+        "id": 2,
+        "loanAccountNumber": "10000000234567",
+        "loanType": "personal",
+        "loanAmount": "200000",
+        "loanEMI": "15000",
+        "loanStartDate": "02-01-2024",
+        "loanEndDate": "02-01-2026",
+        "loanStatus": "active",
+        "username": "username1"
+    },
+    {
+        "id": 3,
+        "loanAccountNumber": "10000000345678",
+        "loanType": "mortgage",
+        "loanAmount": "500000",
+        "loanEMI": "25000",
+        "loanStartDate": "03-01-2024",
+        "loanEndDate": "03-01-2034",
+        "loanStatus": "active",
+        "username": "username1"
+    },
+    {
+        "id": 4,
+        "loanAccountNumber": "10000000456789",
+        "loanType": "car",
+        "loanAmount": "150000",
+        "loanEMI": "12000",
+        "loanStartDate": "04-01-2024",
+        "loanEndDate": "04-01-2027",
+        "loanStatus": "active",
+        "username": "username1"
+    },
+    {
+        "id": 5,
+        "loanAccountNumber": "10000000567890",
+        "loanType": "personal",
+        "loanAmount": "80000",
+        "loanEMI": "6000",
+        "loanStartDate": "05-01-2024",
+        "loanEndDate": "05-01-2025",
+        "loanStatus": "closed",
+        "username": "username2"
+    },
+    {
+        "id": 6,
+        "loanAccountNumber": "10000000678901",
+        "loanType": "mortgage",
+        "loanAmount": "700000",
+        "loanEMI": "35000",
+        "loanStartDate": "06-01-2024",
+        "loanEndDate": "06-01-2034",
+        "loanStatus": "active",
+        "username": "username2"
+    },
+    {
+        "id": 7,
+        "loanAccountNumber": "10000000789012",
+        "loanType": "car",
+        "loanAmount": "120000",
+        "loanEMI": "11000",
+        "loanStartDate": "07-01-2024",
+        "loanEndDate": "07-01-2026",
+        "loanStatus": "active",
+        "username": "username2"
+    },
+    {
+        "id": 8,
+        "loanAccountNumber": "10000000890123",
+        "loanType": "personal",
+        "loanAmount": "50000",
+        "loanEMI": "4000",
+        "loanStartDate": "08-01-2024",
+        "loanEndDate": "08-01-2025",
+        "loanStatus": "closed",
+        "username": "username2"
+    },
+    {
+        "id": 9,
+        "loanAccountNumber": "10000000901234",
+        "loanType": "mortgage",
+        "loanAmount": "600000",
+        "loanEMI": "30000",
+        "loanStartDate": "09-01-2024",
+        "loanEndDate": "09-01-2034",
+        "loanStatus": "active",
+        "username": "username3"
+    },
+    {
+        "id": 10,
+        "loanAccountNumber": "10000000123456",
+        "loanType": "car",
+        "loanAmount": "180000",
+        "loanEMI": "15000",
+        "loanStartDate": "10-01-2024",
+        "loanEndDate": "10-01-2027",
+        "loanStatus": "active",
+        "username": "username3"
+    },
+    {
+        "id": 11,
+        "loanAccountNumber": "10000000134567",
+        "loanType": "personal",
+        "loanAmount": "300000",
+        "loanEMI": "25000",
+        "loanStartDate": "11-01-2024",
+        "loanEndDate": "11-01-2026",
+        "loanStatus": "active",
+        "username": "username3"
+    },
+    {
+        "id": 12,
+        "loanAccountNumber": "10000000145678",
+        "loanType": "mortgage",
+        "loanAmount": "800000",
+        "loanEMI": "40000",
+        "loanStartDate": "12-01-2024",
+        "loanEndDate": "12-01-2034",
+        "loanStatus": "active",
+        "username": "username3"
+    },
+    {
+        "id": 13,
+        "loanAccountNumber": "10000000156789",
+        "loanType": "car",
+        "loanAmount": "160000",
+        "loanEMI": "14000",
+        "loanStartDate": "13-01-2024",
+        "loanEndDate": "13-01-2026",
+        "loanStatus": "active",
+        "username": "username4"
+    },
+    {
+        "id": 14,
+        "loanAccountNumber": "10000000167890",
+        "loanType": "personal",
+        "loanAmount": "120000",
+        "loanEMI": "10000",
+        "loanStartDate": "14-01-2024",
+        "loanEndDate": "14-01-2025",
+        "loanStatus": "closed",
+        "username": "username4"
+    },
+    {
+        "id": 15,
+        "loanAccountNumber": "10000000178901",
+        "loanType": "mortgage",
+        "loanAmount": "900000",
+        "loanEMI": "45000",
+        "loanStartDate": "15-01-2024",
+        "loanEndDate": "15-01-2034",
+        "loanStatus": "active",
+        "username": "username4"
+    },
+    {
+        "id": 16,
+        "loanAccountNumber": "10000000189012",
+        "loanType": "car",
+        "loanAmount": "200000",
+        "loanEMI": "17000",
+        "loanStartDate": "16-01-2024",
+        "loanEndDate": "16-01-2027",
+        "loanStatus": "active",
+        "username": "username4"
+    },
+    {
+        "id": 17,
+        "loanAccountNumber": "10000000190123",
+        "loanType": "personal",
+        "loanAmount": "250000",
+        "loanEMI": "20000",
+        "loanStartDate": "17-01-2024",
+        "loanEndDate": "17-01-2026",
+        "loanStatus": "active",
+        "username": "username5"
+    },
+    {
+        "id": 18,
+        "loanAccountNumber": "10000000201234",
+        "loanType": "mortgage",
+        "loanAmount": "1000000",
+        "loanEMI": "50000",
+        "loanStartDate": "18-01-2024",
+        "loanEndDate": "18-01-2034",
+        "loanStatus": "active",
+        "username": "username5"
+    },
+    {
+        "id": 19,
+        "loanAccountNumber": "10000000212345",
+        "loanType": "car",
+        "loanAmount": "220000",
+        "loanEMI": "20000",
+        "loanStartDate": "19-01-2024",
+        "loanEndDate": "19-01-2027",
+        "loanStatus": "active",
+        "username": "username5"
+    },
+    {
+        "id": 20,
+        "loanAccountNumber": "10000000223456",
+        "loanType": "personal",
+        "loanAmount": "100000",
+        "loanEMI": "9000",
+        "loanStartDate": "20-01-2024",
+        "loanEndDate": "20-01-2025",
+        "loanStatus": "closed",
+        "username": "username5"
+    }
+]
+
 }
