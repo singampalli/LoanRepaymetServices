@@ -41,7 +41,7 @@ SaveData = (username, email, password) => {
     email: email,
     Password: password,
   });
-  const db = { users };
+  const db = { users,loans };
   fs.writeFile("db.json", JSON.stringify(db, null, 2), (err) => {
     if (err) throw err;
     console.log("db.json has been saved!");
@@ -72,6 +72,7 @@ SaveData = (username, email, password) => {
  */
 app.post("/loans", (req, res) => {
   const { username, status } = req.body;
+  console.log(username, status);
   const userloans = loans.filter((loan) => loan.username === username && loan.loanStatus === status);
   const response = { data: userloans, total: userloans.length }
   if (userloans.length > 0)
@@ -135,7 +136,7 @@ app.post("/register", (req, res) => {
   const { username, email, password } = req.body;
   const hashedPassword = bcrypt.hashSync(password, 8);
   SaveData(username, email, hashedPassword);
-  res.status(201).send("User registered successfully");
+  res.status(201).send({status:true,message:"User registered successfully"});
 });
 
 /**
@@ -162,6 +163,7 @@ app.post("/register", (req, res) => {
  */
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
+  console.log(username, password)
   const user = users.find((u) => u.username === username);
   if (user && bcrypt.compareSync(password, user.Password)) {
     const token = jwt.sign({ id: user.username }, "supersecretkey", {
@@ -170,6 +172,77 @@ app.post("/login", (req, res) => {
     res.status(200).send({ auth: true, token });
   } else {
     res.status(401).send("Invalid credentials");
+  }
+});
+
+/**
+ * @swagger
+ * /forgotPassword:
+ *   post:
+ *     summary: Forgot password
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Password reset link sent
+ *       404:
+ *         description: User not found
+ */
+app.post("/forgotPassword", (req, res) => {
+  const { email } = req.body;
+  const resetCode = Math.floor(1000 + Math.random() * 9000);;
+  console.log(resetCode);
+  const user = users.find((u) => u.email === email);
+  if (user) {
+    // Here you would normally send a password reset email
+    res.status(200).send({ resetCode: resetCode });
+  } else {
+    res.status(404).send("User not found");
+  }
+});
+
+/**
+ * @swagger
+ * /resetPassword:
+ *   post:
+ *     summary: Reset password for a user
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               userEmail:
+ *                 type: string
+ *               password:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Password reset successfully
+ *       404:
+ *         description: User not found
+ */
+app.post("/resetPassword", (req, res) => {
+  const { userEmail, password } = req.body;
+  console.log(userEmail, password)
+  const user = users.find((u) => u.email === userEmail);
+  if (user) {
+    user.Password = bcrypt.hashSync(password, 8);
+    fs.writeFile("db.json", JSON.stringify({ users, loans }, null, 2), (err) => {
+      if (err) throw err;
+      console.log("db.json has been updated!");
+    });
+    res.status(200).send({ status: true, message: "Password reset successfully" });
+  } else {
+    res.status(404).send({ status: false, message: "Password reset successfully" });
   }
 });
 
