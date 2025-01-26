@@ -17,6 +17,24 @@
       "username": "username5",
       "email": "username5@email.com",
       "Password": "$2a$08$NIwMNVOJh.770wJb1.O2B.9KVjJF3Q3slB44JEykvcN1HpP50Un.C"
+    },
+    {
+      "id": 4,
+      "username": "username6",
+      "email": "username6@email.com",
+      "Password": "$2a$08$AlSr09c37A7nR9mG7OeDuuLFIcxgCuqk5GwkuEIyGqHYtEImpdYnq"
+    },
+    {
+      "id": 5,
+      "username": "username7",
+      "email": "usernam7@email.com",
+      "Password": "$2a$08$spGU1eDhj1j87wYpay7f8OSwwGSUBD8v5bRmdFW.ID0LVOIN5PLoa"
+    },
+    {
+      "id": 6,
+      "username": "ansari",
+      "email": "ansari@gmail.com",
+      "Password": "$2a$08$0JG1xOcFnqBSKpminIa6rO5h836JC.qx4eZTBR2sGJe8DZCrAi3Yq"
     }
   ],
   "loans": [
@@ -30,18 +48,85 @@
       "loanEndDate": "01-01-2025",
       "loanStatus": "closed",
       "username": "username1",
+      "interestPercentage": 7.5,
       "loanHistory": [
-        { "date": "01-01-2024", "emiPaid": 9999, "interestPaid": 833.33, "principalPaid": 9165.67, "principalLeft": 90834.33 },
-        { "date": "01-02-2024", "emiPaid": 9999, "interestPaid": 756.95, "principalPaid": 9242.05, "principalLeft": 81592.28 },
-        { "date": "01-03-2024", "emiPaid": 9999, "interestPaid": 679.60, "principalPaid": 9319.40, "principalLeft": 72272.88 },
-        { "date": "01-04-2024", "emiPaid": 9999, "interestPaid": 601.27, "principalPaid": 9397.73, "principalLeft": 62875.15 },
-        { "date": "01-05-2024", "emiPaid": 9999, "interestPaid": 521.94, "principalPaid": 9477.06, "principalLeft": 53398.09 },
-        { "date": "01-06-2024", "emiPaid": 9999, "interestPaid": 441.61, "principalPaid": 9557.39, "principalLeft": 43840.70 },
-        { "date": "01-07-2024", "emiPaid": 9999, "interestPaid": 360.26, "principalPaid": 9638.74, "principalLeft": 34201.96 },
-        { "date": "01-08-2024", "emiPaid": 9999, "interestPaid": 277.95, "principalPaid": 9721.05, "principalLeft": 24480.91 },
-        { "date": "01-09-2024", "emiPaid": 9999, "interestPaid": 194.70, "principalPaid": 9804.30, "principalLeft": 14676.61 },
-        { "date": "01-10-2024", "emiPaid": 9999, "interestPaid": 110.45, "principalPaid": 9888.55, "principalLeft": 4788.06 },
-        { "date": "01-11-2024", "emiPaid": 9999, "interestPaid": 25.27, "principalPaid": 9973.73, "principalLeft": 0 }
+        {
+          "date": "01-01-2024",
+          "emiPaid": 9999,
+          "interestPaid": 750,
+          "principalPaid": 9249,
+          "principalLeft": 90751
+        },
+        {
+          "date": "01-02-2024",
+          "emiPaid": 9999,
+          "interestPaid": 680.63,
+          "principalPaid": 9318.37,
+          "principalLeft": 81432.63
+        },
+        {
+          "date": "01-03-2024",
+          "emiPaid": 9999,
+          "interestPaid": 610.74,
+          "principalPaid": 9388.26,
+          "principalLeft": 72044.37
+        },
+        {
+          "date": "01-04-2024",
+          "emiPaid": 9999,
+          "interestPaid": 540.33,
+          "principalPaid": 9458.67,
+          "principalLeft": 62585.7
+        },
+        {
+          "date": "01-05-2024",
+          "emiPaid": 9999,
+          "interestPaid": 469.39,
+          "principalPaid": 9529.61,
+          "principalLeft": 53056.09
+        },
+        {
+          "date": "01-06-2024",
+          "emiPaid": 9999,
+          "interestPaid": 397.92,
+          "principalPaid": 9601.08,
+          "principalLeft": 43455.01
+        },
+        {
+          "date": "01-07-2024",
+          "emiPaid": 9999,
+          "interestPaid": 325.91,
+          "principalPaid": 9673.09,
+          "principalLeft": 33781.92
+        },
+        {
+          "date": "01-08-2024",
+          "emiPaid": 9999,
+          "interestPaid": 253.36,
+          "principalPaid": 9745.64,
+          "principalLeft": 24036.28
+        },
+        {
+          "date": "01-09-2024",
+          "emiPaid": 9999,
+          "interestPaid": 180.27,
+          "principalPaid": 9818.73,
+          "principalLeft": 14217.55
+        },
+        {
+          "date": "01-10-2024",
+          "emiPaid": 9999,
+          "interestPaid": 106.63,
+          "principalPaid": 9892.37,
+          "principalLeft": 43125.18
+        },
+        {
+          "date": "01-11-2024",
+          "emiPaid": 9999,
+          "interestPaid": 32.44,
+          "principalPaid": 9966.56,
+          "principalLeft": 0
+        }
       ]
       
     },
@@ -55,76 +140,310 @@
       "loanEndDate": "02-01-2026",
       "loanStatus": "active",
       "username": "username1",
+      "interestPercentage": 8.5,
       "loanHistory": [
-        { "date": "02-01-2024", "emiPaid": 15000, "interestPaid": 1666.67, "principalPaid": 13333.33, "principalLeft": 186666.67 },
-        { "date": "02-02-2024", "emiPaid": 15000, "interestPaid": 1555.56, "principalPaid": 13444.44, "principalLeft": 173222.22 },
-        { "date": "02-03-2024", "emiPaid": 15000, "interestPaid": 1443.52, "principalPaid": 13556.48, "principalLeft": 159665.74 },
-        { "date": "02-04-2024", "emiPaid": 15000, "interestPaid": 1330.55, "principalPaid": 13669.45, "principalLeft": 145996.30 },
-        { "date": "02-05-2024", "emiPaid": 15000, "interestPaid": 1216.64, "principalPaid": 13783.36, "principalLeft": 132212.94 },
-        { "date": "02-06-2024", "emiPaid": 15000, "interestPaid": 1101.77, "principalPaid": 13898.23, "principalLeft": 118313.71 },
-        { "date": "02-07-2024", "emiPaid": 15000, "interestPaid": 985.95, "principalPaid": 14014.05, "principalLeft": 104297.66 },
-        { "date": "02-08-2024", "emiPaid": 15000, "interestPaid": 869.15, "principalPaid": 14130.85, "principalLeft": 90166.81 },
-        { "date": "02-09-2024", "emiPaid": 15000, "interestPaid": 751.39, "principalPaid": 14248.61, "principalLeft": 75918.20 },
-        { "date": "02-10-2024", "emiPaid": 15000, "interestPaid": 632.65, "principalPaid": 14367.35, "principalLeft": 61550.85 },
-        { "date": "02-11-2024", "emiPaid": 15000, "interestPaid": 512.92, "principalPaid": 14487.08, "principalLeft": 47063.77 },
-        { "date": "02-12-2024", "emiPaid": 15000, "interestPaid": 392.20, "principalPaid": 14607.80, "principalLeft": 32455.97 },
-        { "date": "02-01-2025", "emiPaid": 15000, "interestPaid": 270.47, "principalPaid": 14729.53, "principalLeft": 17726.44 },
-        { "date": "02-02-2025", "emiPaid": 15000, "interestPaid": 147.72, "principalPaid": 14852.28, "principalLeft": 2874.16 },
-        { "date": "02-03-2025", "emiPaid": 15000, "interestPaid": 23.95, "principalPaid": 14976.05, "principalLeft": 0 }
+        {
+          "date": "02-01-2024",
+          "emiPaid": 15000,
+          "interestPaid": 1275,
+          "principalPaid": 13725,
+          "principalLeft": 186275
+        },
+        {
+          "date": "02-02-2024",
+          "emiPaid": 15000,
+          "interestPaid": 1321.94,
+          "principalPaid": 13678.06,
+          "principalLeft": 172596.94
+        },
+        {
+          "date": "02-03-2024",
+          "emiPaid": 15000,
+          "interestPaid": 1219.07,
+          "principalPaid": 13780.93,
+          "principalLeft": 158816.01
+        },
+        {
+          "date": "02-04-2024",
+          "emiPaid": 15000,
+          "interestPaid": 1120.71,
+          "principalPaid": 13879.29,
+          "principalLeft": 144936.72
+        },
+        {
+          "date": "02-05-2024",
+          "emiPaid": 15000,
+          "interestPaid": 1026.95,
+          "principalPaid": 13973.05,
+          "principalLeft": 130963.67
+        },
+        {
+          "date": "02-06-2024",
+          "emiPaid": 15000,
+          "interestPaid": 937.73,
+          "principalPaid": 14062.27,
+          "principalLeft": 116901.4
+        },
+        {
+          "date": "02-07-2024",
+          "emiPaid": 15000,
+          "interestPaid": 853.11,
+          "principalPaid": 14146.89,
+          "principalLeft": 102754.51
+        },
+        {
+          "date": "02-08-2024",
+          "emiPaid": 15000,
+          "interestPaid": 773.04,
+          "principalPaid": 14226.96,
+          "principalLeft": 88527.55
+        },
+        {
+          "date": "02-09-2024",
+          "emiPaid": 15000,
+          "interestPaid": 697.48,
+          "principalPaid": 14302.52,
+          "principalLeft": 74125.03
+        },
+        {
+          "date": "02-10-2024",
+          "emiPaid": 15000,
+          "interestPaid": 626.38,
+          "principalPaid": 14373.62,
+          "principalLeft": 59751.41
+        },
+        {
+          "date": "02-11-2024",
+          "emiPaid": 15000,
+          "interestPaid": 559.69,
+          "principalPaid": 14440.31,
+          "principalLeft": 45311.1
+        },
+        {
+          "date": "02-12-2024",
+          "emiPaid": 15000,
+          "interestPaid": 497.36,
+          "principalPaid": 14502.64,
+          "principalLeft": 30808.46
+        },
+        {
+          "date": "02-01-2025",
+          "emiPaid": 15000,
+          "interestPaid": 439.35,
+          "principalPaid": 14560.65,
+          "principalLeft": 16247.81
+        }
       ]
     },
     {
       "id": 3,
       "loanAccountNumber": "10000000345678",
       "loanType": "mortgage",
-      "loanAmount": "500000",
+      "loanAmount": "5000000",
       "loanEMI": "25000",
       "loanStartDate": "03-01-2024",
       "loanEndDate": "03-01-2034",
       "loanStatus": "active",
       "username": "username1",
+      "interestPercentage": 10.5,
       "loanHistory": [
-      { "date": "03-01-2024", "emiPaid": 25000, "interestPaid": 4166.67, "principalPaid": 20833.33, "principalLeft": 479166.67 },
-      { "date": "03-02-2024", "emiPaid": 25000, "interestPaid": 3993.06, "principalPaid": 21006.94, "principalLeft": 458159.73 },
-      { "date": "03-03-2024", "emiPaid": 25000, "interestPaid": 3817.99, "principalPaid": 21182.01, "principalLeft": 436977.72 },
-      { "date": "03-04-2024", "emiPaid": 25000, "interestPaid": 3641.48, "principalPaid": 21358.52, "principalLeft": 415619.20 },
-      { "date": "03-05-2024", "emiPaid": 25000, "interestPaid": 3463.49, "principalPaid": 21536.51, "principalLeft": 394082.69 },
-      { "date": "03-06-2024", "emiPaid": 25000, "interestPaid": 3284.02, "principalPaid": 21715.98, "principalLeft": 372366.71 },
-      { "date": "03-07-2024", "emiPaid": 25000, "interestPaid": 3103.06, "principalPaid": 21896.94, "principalLeft": 350469.77 },
-      { "date": "03-08-2024", "emiPaid": 25000, "interestPaid": 2920.58, "principalPaid": 22079.42, "principalLeft": 328390.34 },
-      { "date": "03-09-2024", "emiPaid": 25000, "interestPaid": 2736.59, "principalPaid": 22263.41, "principalLeft": 306126.93 },
-      { "date": "03-10-2024", "emiPaid": 25000, "interestPaid": 2551.05, "principalPaid": 22448.95, "principalLeft": 283678.97 },
-      { "date": "03-11-2024", "emiPaid": 25000, "interestPaid": 2363.99, "principalPaid": 22636.01, "principalLeft": 261044.95 },
-      { "date": "03-12-2024", "emiPaid": 25000, "interestPaid": 2175.42, "principalPaid": 22824.58, "principalLeft": 238223.37 }
-    ]
+        {
+          "date": "03-01-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4375,
+          "principalPaid": 20625,
+          "principalLeft": 4979375
+        },
+        {
+          "date": "03-02-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4350.78,
+          "principalPaid": 20649.22,
+          "principalLeft": 4958725.78
+        },
+        {
+          "date": "03-03-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4326.38,
+          "principalPaid": 20673.62,
+          "principalLeft": 4938052.16
+        },
+        {
+          "date": "03-04-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4301.8,
+          "principalPaid": 20698.2,
+          "principalLeft": 4917353.96
+        },
+        {
+          "date": "03-05-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4277.04,
+          "principalPaid": 20722.96,
+          "principalLeft": 4896630.99
+        },
+        {
+          "date": "03-06-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4252.1,
+          "principalPaid": 20747.9,
+          "principalLeft": 4875883.09
+        },
+        {
+          "date": "03-07-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4226.98,
+          "principalPaid": 20773.02,
+          "principalLeft": 4855110.07
+        },
+        {
+          "date": "03-08-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4201.68,
+          "principalPaid": 20798.32,
+          "principalLeft": 4834311.75
+        },
+        {
+          "date": "03-09-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4176.2,
+          "principalPaid": 20823.8,
+          "principalLeft": 4813487.95
+        },
+        {
+          "date": "03-10-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4150.54,
+          "principalPaid": 20849.46,
+          "principalLeft": 4792638.49
+        },
+        {
+          "date": "03-11-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4124.7,
+          "principalPaid": 20875.3,
+          "principalLeft": 4771763.19
+        },
+        {
+          "date": "03-12-2024",
+          "emiPaid": 25000,
+          "interestPaid": 4098.68,
+          "principalPaid": 20901.32,
+          "principalLeft": 4750861.87
+        },
+        {
+          "date": "03-01-2025",
+          "emiPaid": 25000,
+          "interestPaid": 4072.48,
+          "principalPaid": 20927.52,
+          "principalLeft": 4729934.35
+        }
+      ]
     },
     {
       "id": 4,
       "loanAccountNumber": "10000000456789",
       "loanType": "car",
       "loanAmount": "150000",
-      "loanEMI": "12000",
+      "loanEMI": "8000",
       "loanStartDate": "04-01-2024",
       "loanEndDate": "04-01-2027",
       "loanStatus": "active",
       "username": "username1",
+      "interestPercentage": 9.5,
       "loanHistory": [
-      { "date": "04-01-2024", "emiPaid": 12000, "interestPaid": 1250.00, "principalPaid": 10750.00, "principalLeft": 139250.00 },
-      { "date": "04-02-2024", "emiPaid": 12000, "interestPaid": 1160.42, "principalPaid": 10839.58, "principalLeft": 128410.42 },
-      { "date": "04-03-2024", "emiPaid": 12000, "interestPaid": 1069.91, "principalPaid": 10930.09, "principalLeft": 117480.33 },
-      { "date": "04-04-2024", "emiPaid": 12000, "interestPaid": 978.43, "principalPaid": 11021.57, "principalLeft": 106458.76 },
-      { "date": "04-05-2024", "emiPaid": 12000, "interestPaid": 885.97, "principalPaid": 11114.03, "principalLeft": 95344.73 },
-      { "date": "04-06-2024", "emiPaid": 12000, "interestPaid": 792.42, "principalPaid": 11207.58, "principalLeft": 84137.14 },
-      { "date": "04-07-2024", "emiPaid": 12000, "interestPaid": 697.81, "principalPaid": 11302.19, "principalLeft": 72834.95 },
-      { "date": "04-08-2024", "emiPaid": 12000, "interestPaid": 602.04, "principalPaid": 11397.96, "principalLeft": 61437.00 },
-      { "date": "04-09-2024", "emiPaid": 12000, "interestPaid": 505.14, "principalPaid": 11494.86, "principalLeft": 49942.14 },
-      { "date": "04-10-2024", "emiPaid": 12000, "interestPaid": 407.03, "principalPaid": 11592.97, "principalLeft": 38349.18 },
-      { "date": "04-11-2024", "emiPaid": 12000, "interestPaid": 307.76, "principalPaid": 11692.24, "principalLeft": 26656.94 },
-      { "date": "04-12-2024", "emiPaid": 12000, "interestPaid": 207.25, "principalPaid": 11792.75, "principalLeft": 14864.19 },
-      { "date": "04-01-2025", "emiPaid": 12000, "interestPaid": 105.49, "principalPaid": 11894.51, "principalLeft": 29469.68 },
-      { "date": "04-02-2025", "emiPaid": 12000, "interestPaid": 2.47, "principalPaid": 11997.53, "principalLeft": 0 }
-    ]
-
+        {
+          "date": "04-01-2024",
+          "emiPaid": 8000,
+          "interestPaid": 1187.5,
+          "principalPaid": 6812.5,
+          "principalLeft": 143187.5
+        },
+        {
+          "date": "04-02-2024",
+          "emiPaid": 8000,
+          "interestPaid": 1138.77,
+          "principalPaid": 6861.23,
+          "principalLeft": 136326.27
+        },
+        {
+          "date": "04-03-2024",
+          "emiPaid": 8000,
+          "interestPaid": 1088.59,
+          "principalPaid": 6911.41,
+          "principalLeft": 129414.86
+        },
+        {
+          "date": "04-04-2024",
+          "emiPaid": 8000,
+          "interestPaid": 1036.94,
+          "principalPaid": 6963.06,
+          "principalLeft": 122451.8
+        },
+        {
+          "date": "04-05-2024",
+          "emiPaid": 8000,
+          "interestPaid": 983.79,
+          "principalPaid": 7016.21,
+          "principalLeft": 115435.59
+        },
+        {
+          "date": "04-06-2024",
+          "emiPaid": 8000,
+          "interestPaid": 929.14,
+          "principalPaid": 7070.86,
+          "principalLeft": 108364.73
+        },
+        {
+          "date": "04-07-2024",
+          "emiPaid": 8000,
+          "interestPaid": 872.99,
+          "principalPaid": 7127.01,
+          "principalLeft": 101237.72
+        },
+        {
+          "date": "04-08-2024",
+          "emiPaid": 8000,
+          "interestPaid": 815.29,
+          "principalPaid": 7184.71,
+          "principalLeft": 94053.01
+        },
+        {
+          "date": "04-09-2024",
+          "emiPaid": 8000,
+          "interestPaid": 756.02,
+          "principalPaid": 7243.98,
+          "principalLeft": 86809.03
+        },
+        {
+          "date": "04-10-2024",
+          "emiPaid": 8000,
+          "interestPaid": 695.14,
+          "principalPaid": 7304.86,
+          "principalLeft": 79404.17
+        },
+        {
+          "date": "04-11-2024",
+          "emiPaid": 8000,
+          "interestPaid": 632.63,
+          "principalPaid": 7367.37,
+          "principalLeft": 71736.8
+        },
+        {
+          "date": "04-12-2024",
+          "emiPaid": 8000,
+          "interestPaid": 568.47,
+          "principalPaid": 7431.53,
+          "principalLeft": 63805.27
+        },
+        {
+          "date": "04-01-2025",
+          "emiPaid": 8000,
+          "interestPaid": 502.63,
+          "principalPaid": 7497.37,
+          "principalLeft": 55507.9
+        }
+      ]
     },
     {
       "id": 5,
@@ -136,19 +455,99 @@
       "loanEndDate": "05-01-2025",
       "loanStatus": "closed",
       "username": "username2",
+      "interestPercentage": 6.5,
       "loanHistory": [
-        { "date": "05-01-2024", "emiPaid": 6000, "interestPaid": 500.00, "principalPaid": 5500.00, "principalLeft": 74500.00 },
-        { "date": "05-02-2024", "emiPaid": 6000, "interestPaid": 454.17, "principalPaid": 5545.83, "principalLeft": 68954.17 },
-        { "date": "05-03-2024", "emiPaid": 6000, "interestPaid": 408.14, "principalPaid": 5591.86, "principalLeft": 63362.31 },
-        { "date": "05-04-2024", "emiPaid": 6000, "interestPaid": 361.82, "principalPaid": 5638.18, "principalLeft": 57724.13 },
-        { "date": "05-05-2024", "emiPaid": 6000, "interestPaid": 315.21, "principalPaid": 5684.79, "principalLeft": 52039.34 },
-        { "date": "05-06-2024", "emiPaid": 6000, "interestPaid": 268.33, "principalPaid": 5731.67, "principalLeft": 46307.67 },
-        { "date": "05-07-2024", "emiPaid": 6000, "interestPaid": 221.17, "principalPaid": 5778.83, "principalLeft": 40528.84 },
-        { "date": "05-08-2024", "emiPaid": 6000, "interestPaid": 173.71, "principalPaid": 5826.29, "principalLeft": 34692.56 },
-        { "date": "05-09-2024", "emiPaid": 6000, "interestPaid": 125.97, "principalPaid": 5874.03, "principalLeft": 28808.53 },
-        { "date": "05-10-2024", "emiPaid": 6000, "interestPaid": 77.94, "principalPaid": 5922.06, "principalLeft": 22866.47 },
-        { "date": "05-11-2024", "emiPaid": 6000, "interestPaid": 29.62, "principalPaid": 5970.38, "principalLeft": 16866.09 },
-        { "date": "05-12-2024", "emiPaid": 6000, "interestPaid": 2.96, "principalPaid": 5997.04, "principalLeft": 10807.06 }
+        {
+          "date": "05-01-2024",
+          "emiPaid": 6000,
+          "interestPaid": 325,
+          "principalPaid": 5675,
+          "principalLeft": 74325
+        },
+        {
+          "date": "05-02-2024",
+          "emiPaid": 6000,
+          "interestPaid": 301.36,
+          "principalPaid": 5698.64,
+          "principalLeft": 68626.36
+        },
+        {
+          "date": "05-03-2024",
+          "emiPaid": 6000,
+          "interestPaid": 276.94,
+          "principalPaid": 5723.06,
+          "principalLeft": 62903.3
+        },
+        {
+          "date": "05-04-2024",
+          "emiPaid": 6000,
+          "interestPaid": 251.61,
+          "principalPaid": 5748.39,
+          "principalLeft": 57154.91
+        },
+        {
+          "date": "05-05-2024",
+          "emiPaid": 6000,
+          "interestPaid": 225.38,
+          "principalPaid": 5774.62,
+          "principalLeft": 51380.29
+        },
+        {
+          "date": "05-06-2024",
+          "emiPaid": 6000,
+          "interestPaid": 198.21,
+          "principalPaid": 5801.79,
+          "principalLeft": 45578.5
+        },
+        {
+          "date": "05-07-2024",
+          "emiPaid": 6000,
+          "interestPaid": 170.1,
+          "principalPaid": 5829.9,
+          "principalLeft": 39748.6
+        },
+        {
+          "date": "05-08-2024",
+          "emiPaid": 6000,
+          "interestPaid": 141.01,
+          "principalPaid": 5858.99,
+          "principalLeft": 33889.61
+        },
+        {
+          "date": "05-09-2024",
+          "emiPaid": 6000,
+          "interestPaid": 110.89,
+          "principalPaid": 5889.11,
+          "principalLeft": 27900.5
+        },
+        {
+          "date": "05-10-2024",
+          "emiPaid": 6000,
+          "interestPaid": 79.75,
+          "principalPaid": 5920.25,
+          "principalLeft": 21880.25
+        },
+        {
+          "date": "05-11-2024",
+          "emiPaid": 6000,
+          "interestPaid": 47.54,
+          "principalPaid": 5952.46,
+          "principalLeft": 15827.79
+        },
+        {
+          "date": "05-12-2024",
+          "emiPaid": 6000,
+          "interestPaid": 14.24,
+          "principalPaid": 5985.76,
+          "principalLeft": 9742.03
+        },
+        {
+          "date": "05-01-2025",
+          "emiPaid": 6000,
+          "interestPaid": 0,
+          "principalPaid": 6000,
+          "principalLeft": 3742.03
+        }
       ]
     },
     {
@@ -161,19 +560,99 @@
       "loanEndDate": "06-01-2034",
       "loanStatus": "active",
       "username": "username2",
+      "interestPercentage": 9.5,
       "loanHistory": [
-        { "date": "06-01-2024", "emiPaid": 35000, "interestPaid": 5833.33, "principalPaid": 29166.67, "principalLeft": 670833.33 },
-        { "date": "06-02-2024", "emiPaid": 35000, "interestPaid": 5580.00, "principalPaid": 29420.00, "principalLeft": 641413.33 },
-        { "date": "06-03-2024", "emiPaid": 35000, "interestPaid": 5320.98, "principalPaid": 29679.02, "principalLeft": 611734.31 },
-        { "date": "06-04-2024", "emiPaid": 35000, "interestPaid": 5062.36, "principalPaid": 29937.64, "principalLeft": 581796.67 },
-        { "date": "06-05-2024", "emiPaid": 35000, "interestPaid": 4804.00, "principalPaid": 30196.00, "principalLeft": 551600.67 },
-        { "date": "06-06-2024", "emiPaid": 35000, "interestPaid": 4545.00, "principalPaid": 30455.00, "principalLeft": 521145.67 },
-        { "date": "06-07-2024", "emiPaid": 35000, "interestPaid": 4284.29, "principalPaid": 30715.71, "principalLeft": 490429.96 },
-        { "date": "06-08-2024", "emiPaid": 35000, "interestPaid": 4022.08, "principalPaid": 30977.92, "principalLeft": 459452.05 },
-        { "date": "06-09-2024", "emiPaid": 35000, "interestPaid": 3758.33, "principalPaid": 31241.67, "principalLeft": 428210.38 },
-        { "date": "06-10-2024", "emiPaid": 35000, "interestPaid": 3492.00, "principalPaid": 31508.00, "principalLeft": 396703.38 },
-        { "date": "06-11-2024", "emiPaid": 35000, "interestPaid": 3223.00, "principalPaid": 31777.00, "principalLeft": 364929.57 },
-        { "date": "06-12-2024", "emiPaid": 35000, "interestPaid": 2951.46, "principalPaid": 32048.54, "principalLeft": 332887.41 }
+        {
+          "date": "06-01-2024",
+          "emiPaid": 35000,
+          "interestPaid": 5541.67,
+          "principalPaid": 29458.33,
+          "principalLeft": 670541.67
+        },
+        {
+          "date": "06-02-2024",
+          "emiPaid": 35000,
+          "interestPaid": 5309.27,
+          "principalPaid": 29690.73,
+          "principalLeft": 640850.94
+        },
+        {
+          "date": "06-03-2024",
+          "emiPaid": 35000,
+          "interestPaid": 5074.54,
+          "principalPaid": 29925.46,
+          "principalLeft": 610925.48
+        },
+        {
+          "date": "06-04-2024",
+          "emiPaid": 35000,
+          "interestPaid": 4837.44,
+          "principalPaid": 30162.56,
+          "principalLeft": 580762.92
+        },
+        {
+          "date": "06-05-2024",
+          "emiPaid": 35000,
+          "interestPaid": 4597.95,
+          "principalPaid": 30402.05,
+          "principalLeft": 550360.87
+        },
+        {
+          "date": "06-06-2024",
+          "emiPaid": 35000,
+          "interestPaid": 4356.01,
+          "principalPaid": 30643.99,
+          "principalLeft": 519716.88
+        },
+        {
+          "date": "06-07-2024",
+          "emiPaid": 35000,
+          "interestPaid": 4111.61,
+          "principalPaid": 30888.39,
+          "principalLeft": 488828.49
+        },
+        {
+          "date": "06-08-2024",
+          "emiPaid": 35000,
+          "interestPaid": 3864.71,
+          "principalPaid": 31135.29,
+          "principalLeft": 457693.2
+        },
+        {
+          "date": "06-09-2024",
+          "emiPaid": 35000,
+          "interestPaid": 3615.28,
+          "principalPaid": 31384.72,
+          "principalLeft": 426308.48
+        },
+        {
+          "date": "06-10-2024",
+          "emiPaid": 35000,
+          "interestPaid": 3363.28,
+          "principalPaid": 31636.72,
+          "principalLeft": 394671.76
+        },
+        {
+          "date": "06-11-2024",
+          "emiPaid": 35000,
+          "interestPaid": 3108.68,
+          "principalPaid": 31891.32,
+          "principalLeft": 362780.44
+        },
+        {
+          "date": "06-12-2024",
+          "emiPaid": 35000,
+          "interestPaid": 2851.44,
+          "principalPaid": 32148.56,
+          "principalLeft": 330631.88
+        },
+        {
+          "date": "06-01-2025",
+          "emiPaid": 35000,
+          "interestPaid": 2591.52,
+          "principalPaid": 32408.48,
+          "principalLeft": 298223.4
+        }
       ]
       
     },
@@ -187,19 +666,92 @@
       "loanEndDate": "07-01-2026",
       "loanStatus": "active",
       "username": "username2",
+      "interestPercentage": 8.5,
       "loanHistory": [
-        { "date": "07-01-2024", "emiPaid": 11000, "interestPaid": 1000.00, "principalPaid": 10000.00, "principalLeft": 110000.00 },
-        { "date": "07-02-2024", "emiPaid": 11000, "interestPaid": 916.67, "principalPaid": 10083.33, "principalLeft": 99916.67 },
-        { "date": "07-03-2024", "emiPaid": 11000, "interestPaid": 832.64, "principalPaid": 10167.36, "principalLeft": 89749.31 },
-        { "date": "07-04-2024", "emiPaid": 11000, "interestPaid": 747.91, "principalPaid": 10252.09, "principalLeft": 79507.22 },
-        { "date": "07-05-2024", "emiPaid": 11000, "interestPaid": 662.56, "principalPaid": 10337.44, "principalLeft": 69169.78 },
-        { "date": "07-06-2024", "emiPaid": 11000, "interestPaid": 576.50, "principalPaid": 10423.50, "principalLeft": 58746.28 },
-        { "date": "07-07-2024", "emiPaid": 11000, "interestPaid": 489.55, "principalPaid": 10510.45, "principalLeft": 48235.83 },
-        { "date": "07-08-2024", "emiPaid": 11000, "interestPaid": 401.96, "principalPaid": 10598.04, "principalLeft": 37637.79 },
-        { "date": "07-09-2024", "emiPaid": 11000, "interestPaid": 313.65, "principalPaid": 10686.35, "principalLeft": 26951.44 },
-        { "date": "07-10-2024", "emiPaid": 11000, "interestPaid": 224.59, "principalPaid": 10775.41, "principalLeft": 16176.03 },
-        { "date": "07-11-2024", "emiPaid": 11000, "interestPaid": 134.80, "principalPaid": 10865.20, "principalLeft": 5310.82 },
-        { "date": "07-12-2024", "emiPaid": 11000, "interestPaid": 44.26, "principalPaid": 10955.74, "principalLeft": 0.00 }
+        {
+          "date": "07-01-2024",
+          "emiPaid": 11000,
+          "interestPaid": 850,
+          "principalPaid": 10150,
+          "principalLeft": 109850
+        },
+        {
+          "date": "07-02-2024",
+          "emiPaid": 11000,
+          "interestPaid": 777.38,
+          "principalPaid": 10222.62,
+          "principalLeft": 99577.38
+        },
+        {
+          "date": "07-03-2024",
+          "emiPaid": 11000,
+          "interestPaid": 704.41,
+          "principalPaid": 10295.59,
+          "principalLeft": 89281.79
+        },
+        {
+          "date": "07-04-2024",
+          "emiPaid": 11000,
+          "interestPaid": 631.07,
+          "principalPaid": 10368.93,
+          "principalLeft": 78912.86
+        },
+        {
+          "date": "07-05-2024",
+          "emiPaid": 11000,
+          "interestPaid": 557.38,
+          "principalPaid": 10442.62,
+          "principalLeft": 68470.24
+        },
+        {
+          "date": "07-06-2024",
+          "emiPaid": 11000,
+          "interestPaid": 483.32,
+          "principalPaid": 10516.68,
+          "principalLeft": 57953.56
+        },
+        {
+          "date": "07-07-2024",
+          "emiPaid": 11000,
+          "interestPaid": 408.91,
+          "principalPaid": 10591.09,
+          "principalLeft": 47362.47
+        },
+        {
+          "date": "07-08-2024",
+          "emiPaid": 11000,
+          "interestPaid": 334.08,
+          "principalPaid": 10665.92,
+          "principalLeft": 36796.55
+        },
+        {
+          "date": "07-09-2024",
+          "emiPaid": 11000,
+          "interestPaid": 258.88,
+          "principalPaid": 10741.12,
+          "principalLeft": 26155.43
+        },
+        {
+          "date": "07-10-2024",
+          "emiPaid": 11000,
+          "interestPaid": 183.29,
+          "principalPaid": 10816.71,
+          "principalLeft": 15438.72
+        },
+        {
+          "date": "07-11-2024",
+          "emiPaid": 11000,
+          "interestPaid": 107.32,
+          "principalPaid": 10892.68,
+          "principalLeft": 4636.04
+        },
+        {
+          "date": "07-12-2024",
+          "emiPaid": 4636.04,
+          "interestPaid": 32.23,
+          "principalPaid": 4603.81,
+          "principalLeft": 0
+        }
       ]
     },
     {
@@ -212,22 +764,100 @@
       "loanEndDate": "08-01-2025",
       "loanStatus": "closed",
       "username": "username2",
+      "interestPercentage": 5.5,
       "loanHistory": [
-      { "date": "08-01-2024", "emiPaid": 4000, "interestPaid": 333.33, "principalPaid": 3666.67, "principalLeft": 46333.33 },
-      { "date": "08-02-2024", "emiPaid": 4000, "interestPaid": 309.44, "principalPaid": 3690.56, "principalLeft": 42642.78 },
-      { "date": "08-03-2024", "emiPaid": 4000, "interestPaid": 284.29, "principalPaid": 3715.71, "principalLeft": 38927.06 },
-      { "date": "08-04-2024", "emiPaid": 4000, "interestPaid": 257.77, "principalPaid": 3742.23, "principalLeft": 35184.83 },
-      { "date": "08-05-2024", "emiPaid": 4000, "interestPaid": 229.89, "principalPaid": 3770.11, "principalLeft": 31414.72 },
-      { "date": "08-06-2024", "emiPaid": 4000, "interestPaid": 200.69, "principalPaid": 3799.31, "principalLeft": 27615.41 },
-      { "date": "08-07-2024", "emiPaid": 4000, "interestPaid": 170.13, "principalPaid": 3829.87, "principalLeft": 23785.54 },
-      { "date": "08-08-2024", "emiPaid": 4000, "interestPaid": 138.23, "principalPaid": 3861.77, "principalLeft": 19923.77 },
-      { "date": "08-09-2024", "emiPaid": 4000, "interestPaid": 104.96, "principalPaid": 3895.04, "principalLeft": 16028.73 },
-      { "date": "08-10-2024", "emiPaid": 4000, "interestPaid": 70.32, "principalPaid": 3929.68, "principalLeft": 12099.05 },
-      { "date": "08-11-2024", "emiPaid": 4000, "interestPaid": 34.29, "principalPaid": 3965.71, "principalLeft": 8133.34 },
-      { "date": "08-12-2024", "emiPaid": 4000, "interestPaid": 0.00, "principalPaid": 4000.00, "principalLeft": 4133.34 },
-      { "date": "08-01-2025", "emiPaid": 4000, "interestPaid": 34.00, "principalPaid": 3966.00, "principalLeft": 167.34 },
-      { "date": "08-02-2025", "emiPaid": 167.34, "interestPaid": 1.39, "principalPaid": 165.95, "principalLeft": 0 }
-    ]
+        {
+          "date": "08-01-2024",
+          "emiPaid": 4000,
+          "interestPaid": 229.17,
+          "principalPaid": 3770.83,
+          "principalLeft": 46229.17
+        },
+        {
+          "date": "08-02-2024",
+          "emiPaid": 4000,
+          "interestPaid": 211.06,
+          "principalPaid": 3788.94,
+          "principalLeft": 42440.23
+        },
+        {
+          "date": "08-03-2024",
+          "emiPaid": 4000,
+          "interestPaid": 193.02,
+          "principalPaid": 3806.98,
+          "principalLeft": 38633.25
+        },
+        {
+          "date": "08-04-2024",
+          "emiPaid": 4000,
+          "interestPaid": 175.06,
+          "principalPaid": 3824.94,
+          "principalLeft": 34808.31
+        },
+        {
+          "date": "08-05-2024",
+          "emiPaid": 4000,
+          "interestPaid": 157.04,
+          "principalPaid": 3842.96,
+          "principalLeft": 30965.35
+        },
+        {
+          "date": "08-06-2024",
+          "emiPaid": 4000,
+          "interestPaid": 139.01,
+          "principalPaid": 3860.99,
+          "principalLeft": 27104.36
+        },
+        {
+          "date": "08-07-2024",
+          "emiPaid": 4000,
+          "interestPaid": 120.96,
+          "principalPaid": 3879.04,
+          "principalLeft": 23225.32
+        },
+        {
+          "date": "08-08-2024",
+          "emiPaid": 4000,
+          "interestPaid": 102.85,
+          "principalPaid": 3897.15,
+          "principalLeft": 19328.17
+        },
+        {
+          "date": "08-09-2024",
+          "emiPaid": 4000,
+          "interestPaid": 84.71,
+          "principalPaid": 3915.29,
+          "principalLeft": 15412.88
+        },
+        {
+          "date": "08-10-2024",
+          "emiPaid": 4000,
+          "interestPaid": 66.47,
+          "principalPaid": 3933.53,
+          "principalLeft": 11479.35
+        },
+        {
+          "date": "08-11-2024",
+          "emiPaid": 4000,
+          "interestPaid": 48.16,
+          "principalPaid": 3951.84,
+          "principalLeft": 7537.51
+        },
+        {
+          "date": "08-12-2024",
+          "emiPaid": 4000,
+          "interestPaid": 29.74,
+          "principalPaid": 3970.26,
+          "principalLeft": 3567.25
+        },
+        {
+          "date": "08-01-2025",
+          "emiPaid": 3567.25,
+          "interestPaid": 16.35,
+          "principalPaid": 3550.9,
+          "principalLeft": 0
+        }
+      ]
     },
     {
       "id": 9,
@@ -239,19 +869,99 @@
       "loanEndDate": "09-01-2034",
       "loanStatus": "active",
       "username": "username3",
+      "interestPercentage": 9.5,
       "loanHistory": [
-        { "date": "09-01-2024", "emiPaid": 30000, "interestPaid": 5000.00, "principalPaid": 25000.00, "principalLeft": 575000.00 },
-        { "date": "09-02-2024", "emiPaid": 30000, "interestPaid": 4791.67, "principalPaid": 25208.33, "principalLeft": 549791.67 },
-        { "date": "09-03-2024", "emiPaid": 30000, "interestPaid": 4581.60, "principalPaid": 25418.40, "principalLeft": 524373.27 },
-        { "date": "09-04-2024", "emiPaid": 30000, "interestPaid": 4369.78, "principalPaid": 25630.22, "principalLeft": 498743.05 },
-        { "date": "09-05-2024", "emiPaid": 30000, "interestPaid": 4156.19, "principalPaid": 25843.81, "principalLeft": 472899.24 },
-        { "date": "09-06-2024", "emiPaid": 30000, "interestPaid": 3939.99, "principalPaid": 26060.01, "principalLeft": 446839.23 },
-        { "date": "09-07-2024", "emiPaid": 30000, "interestPaid": 3722.06, "principalPaid": 26277.94, "principalLeft": 420560.43 },
-        { "date": "09-08-2024", "emiPaid": 30000, "interestPaid": 3502.41, "principalPaid": 26497.59, "principalLeft": 394060.19 },
-        { "date": "09-09-2024", "emiPaid": 30000, "interestPaid": 3280.99, "principalPaid": 26719.01, "principalLeft": 367335.93 },
-        { "date": "09-10-2024", "emiPaid": 30000, "interestPaid": 3057.79, "principalPaid": 26942.21, "principalLeft": 340385.72 },
-        { "date": "09-11-2024", "emiPaid": 30000, "interestPaid": 2832.81, "principalPaid": 27167.19, "principalLeft": 313206.27 },
-        { "date": "09-12-2024", "emiPaid": 30000, "interestPaid": 2606.05, "principalPaid": 27393.95, "principalLeft": 285795.32 }
+        {
+          "date": "09-01-2024",
+          "emiPaid": 30000,
+          "interestPaid": 4750,
+          "principalPaid": 25250,
+          "principalLeft": 574750
+        },
+        {
+          "date": "09-02-2024",
+          "emiPaid": 30000,
+          "interestPaid": 4567.81,
+          "principalPaid": 25432.19,
+          "principalLeft": 549317.81
+        },
+        {
+          "date": "09-03-2024",
+          "emiPaid": 30000,
+          "interestPaid": 4383.77,
+          "principalPaid": 25616.23,
+          "principalLeft": 523701.58
+        },
+        {
+          "date": "09-04-2024",
+          "emiPaid": 30000,
+          "interestPaid": 4197.77,
+          "principalPaid": 25802.23,
+          "principalLeft": 497899.35
+        },
+        {
+          "date": "09-05-2024",
+          "emiPaid": 30000,
+          "interestPaid": 4009.79,
+          "principalPaid": 25990.21,
+          "principalLeft": 471909.14
+        },
+        {
+          "date": "09-06-2024",
+          "emiPaid": 30000,
+          "interestPaid": 3819.73,
+          "principalPaid": 26180.27,
+          "principalLeft": 445728.87
+        },
+        {
+          "date": "09-07-2024",
+          "emiPaid": 30000,
+          "interestPaid": 3627.49,
+          "principalPaid": 26372.51,
+          "principalLeft": 419356.36
+        },
+        {
+          "date": "09-08-2024",
+          "emiPaid": 30000,
+          "interestPaid": 3432.99,
+          "principalPaid": 26567.01,
+          "principalLeft": 392789.35
+        },
+        {
+          "date": "09-09-2024",
+          "emiPaid": 30000,
+          "interestPaid": 3236.19,
+          "principalPaid": 26763.81,
+          "principalLeft": 366025.54
+        },
+        {
+          "date": "09-10-2024",
+          "emiPaid": 30000,
+          "interestPaid": 3036.99,
+          "principalPaid": 26963.01,
+          "principalLeft": 339062.53
+        },
+        {
+          "date": "09-11-2024",
+          "emiPaid": 30000,
+          "interestPaid": 2835.39,
+          "principalPaid": 27164.61,
+          "principalLeft": 311897.92
+        },
+        {
+          "date": "09-12-2024",
+          "emiPaid": 30000,
+          "interestPaid": 2631.31,
+          "principalPaid": 27368.69,
+          "principalLeft": 284529.23
+        },
+        {
+          "date": "09-01-2025",
+          "emiPaid": 30000,
+          "interestPaid": 2424.72,
+          "principalPaid": 27575.28,
+          "principalLeft": 256953.95
+        }
       ]
     },
     {
@@ -264,22 +974,100 @@
       "loanEndDate": "10-01-2027",
       "loanStatus": "active",
       "username": "username3",
-    "loanHistory": [
-      { "date": "10-01-2024", "emiPaid": 15000, "interestPaid": 1500.00, "principalPaid": 13500.00, "principalLeft": 166500.00 },
-      { "date": "10-02-2024", "emiPaid": 15000, "interestPaid": 1387.50, "principalPaid": 13612.50, "principalLeft": 152887.50 },
-      { "date": "10-03-2024", "emiPaid": 15000, "interestPaid": 1274.06, "principalPaid": 13725.94, "principalLeft": 139161.56 },
-      { "date": "10-04-2024", "emiPaid": 15000, "interestPaid": 1159.68, "principalPaid": 13840.32, "principalLeft": 125321.24 },
-      { "date": "10-05-2024", "emiPaid": 15000, "interestPaid": 1044.34, "principalPaid": 13955.66, "principalLeft": 111365.58 },
-      { "date": "10-06-2024", "emiPaid": 15000, "interestPaid": 928.05, "principalPaid": 14071.95, "principalLeft": 97393.63 },
-      { "date": "10-07-2024", "emiPaid": 15000, "interestPaid": 810.78, "principalPaid": 14189.22, "principalLeft": 83204.41 },
-      { "date": "10-08-2024", "emiPaid": 15000, "interestPaid": 692.54, "principalPaid": 14307.46, "principalLeft": 68996.95 },
-      { "date": "10-09-2024", "emiPaid": 15000, "interestPaid": 573.31, "principalPaid": 14426.69, "principalLeft": 54570.26 },
-      { "date": "10-10-2024", "emiPaid": 15000, "interestPaid": 453.08, "principalPaid": 14546.92, "principalLeft": 40023.34 },
-      { "date": "10-11-2024", "emiPaid": 15000, "interestPaid": 331.86, "principalPaid": 14668.14, "principalLeft": 25355.19 },
-      { "date": "10-12-2024", "emiPaid": 15000, "interestPaid": 209.63, "principalPaid": 14790.37, "principalLeft": 10564.82 },
-      { "date": "10-01-2025", "emiPaid": 15000, "interestPaid": 86.37, "principalPaid": 14913.63, "principalLeft": 0 }
-    ]
-    
+      "interestPercentage": 8.5,
+      "loanHistory": [
+        {
+          "date": "10-01-2024",
+          "emiPaid": 15000,
+          "interestPaid": 1275,
+          "principalPaid": 13725,
+          "principalLeft": 166275
+        },
+        {
+          "date": "10-02-2024",
+          "emiPaid": 15000,
+          "interestPaid": 1184.93,
+          "principalPaid": 13815.07,
+          "principalLeft": 152459.93
+        },
+        {
+          "date": "10-03-2024",
+          "emiPaid": 15000,
+          "interestPaid": 1089.9,
+          "principalPaid": 13910.1,
+          "principalLeft": 138549.83
+        },
+        {
+          "date": "10-04-2024",
+          "emiPaid": 15000,
+          "interestPaid": 990.12,
+          "principalPaid": 14009.88,
+          "principalLeft": 124539.95
+        },
+        {
+          "date": "10-05-2024",
+          "emiPaid": 15000,
+          "interestPaid": 885.59,
+          "principalPaid": 14114.41,
+          "principalLeft": 110425.54
+        },
+        {
+          "date": "10-06-2024",
+          "emiPaid": 15000,
+          "interestPaid": 776.31,
+          "principalPaid": 14223.69,
+          "principalLeft": 96201.85
+        },
+        {
+          "date": "10-07-2024",
+          "emiPaid": 15000,
+          "interestPaid": 662.27,
+          "principalPaid": 14337.73,
+          "principalLeft": 81864.12
+        },
+        {
+          "date": "10-08-2024",
+          "emiPaid": 15000,
+          "interestPaid": 543.47,
+          "principalPaid": 14456.53,
+          "principalLeft": 67407.59
+        },
+        {
+          "date": "10-09-2024",
+          "emiPaid": 15000,
+          "interestPaid": 419.91,
+          "principalPaid": 14580.09,
+          "principalLeft": 52827.5
+        },
+        {
+          "date": "10-10-2024",
+          "emiPaid": 15000,
+          "interestPaid": 291.58,
+          "principalPaid": 14708.42,
+          "principalLeft": 38119.08
+        },
+        {
+          "date": "10-11-2024",
+          "emiPaid": 15000,
+          "interestPaid": 158.48,
+          "principalPaid": 14841.52,
+          "principalLeft": 23277.56
+        },
+        {
+          "date": "10-12-2024",
+          "emiPaid": 15000,
+          "interestPaid": 20.61,
+          "principalPaid": 14979.39,
+          "principalLeft": 8300.17
+        },
+        {
+          "date": "10-01-2025",
+          "emiPaid": 8300.17,
+          "interestPaid": 5.88,
+          "principalPaid": 8294.29,
+          "principalLeft": 0
+        }
+      ]
     },
     {
       "id": 11,
@@ -291,25 +1079,103 @@
       "loanEndDate": "11-01-2026",
       "loanStatus": "active",
       "username": "username3",
+      "interestPercentage": 7.5,
       "loanHistory": [
-        { "date": "11-01-2024", "emiPaid": 25000, "interestPaid": 2500.00, "principalPaid": 22500.00, "principalLeft": 277500.00 },
-        { "date": "11-02-2024", "emiPaid": 25000, "interestPaid": 2312.50, "principalPaid": 22687.50, "principalLeft": 254812.50 },
-        { "date": "11-03-2024", "emiPaid": 25000, "interestPaid": 2123.44, "principalPaid": 22876.56, "principalLeft": 231935.94 },
-        { "date": "11-04-2024", "emiPaid": 25000, "interestPaid": 1932.80, "principalPaid": 23067.20, "principalLeft": 208868.74 },
-        { "date": "11-05-2024", "emiPaid": 25000, "interestPaid": 1740.57, "principalPaid": 23259.43, "principalLeft": 185609.31 },
-        { "date": "11-06-2024", "emiPaid": 25000, "interestPaid": 1546.74, "principalPaid": 23453.26, "principalLeft": 162156.05 },
-        { "date": "11-07-2024", "emiPaid": 25000, "interestPaid": 1351.30, "principalPaid": 23648.70, "principalLeft": 138507.35 },
-        { "date": "11-08-2024", "emiPaid": 25000, "interestPaid": 1154.23, "principalPaid": 23845.77, "principalLeft": 114661.58 },
-        { "date": "11-09-2024", "emiPaid": 25000, "interestPaid": 955.52, "principalPaid": 24044.48, "principalLeft": 90617.10 },
-        { "date": "11-10-2024", "emiPaid": 25000, "interestPaid": 755.14, "principalPaid": 24244.86, "principalLeft": 66172.24 },
-        { "date": "11-11-2024", "emiPaid": 25000, "interestPaid": 553.06, "principalPaid": 24446.94, "principalLeft": 41625.30 },
-        { "date": "11-12-2024", "emiPaid": 25000, "interestPaid": 349.27, "principalPaid": 24650.73, "principalLeft": 16974.57 },
-        { "date": "11-01-2025", "emiPaid": 25000, "interestPaid": 143.77, "principalPaid": 24856.23, "principalLeft": 118.34 },
-        { "date": "11-02-2025", "emiPaid": 118.34, "interestPaid": 0.98, "principalPaid": 117.36, "principalLeft": 0 }
+        {
+          "date": "11-01-2024",
+          "emiPaid": 25000,
+          "interestPaid": 1875,
+          "principalPaid": 23125,
+          "principalLeft": 276875
+        },
+        {
+          "date": "11-02-2024",
+          "emiPaid": 25000,
+          "interestPaid": 1730.47,
+          "principalPaid": 23269.53,
+          "principalLeft": 253605.47
+        },
+        {
+          "date": "11-03-2024",
+          "emiPaid": 25000,
+          "interestPaid": 1585.03,
+          "principalPaid": 23414.97,
+          "principalLeft": 230190.5
+        },
+        {
+          "date": "11-04-2024",
+          "emiPaid": 25000,
+          "interestPaid": 1438.69,
+          "principalPaid": 23561.31,
+          "principalLeft": 206629.19
+        },
+        {
+          "date": "11-05-2024",
+          "emiPaid": 25000,
+          "interestPaid": 1291.43,
+          "principalPaid": 23708.57,
+          "principalLeft": 182920.62
+        },
+        {
+          "date": "11-06-2024",
+          "emiPaid": 25000,
+          "interestPaid": 1143.25,
+          "principalPaid": 23856.75,
+          "principalLeft": 159063.87
+        },
+        {
+          "date": "11-07-2024",
+          "emiPaid": 25000,
+          "interestPaid": 994.15,
+          "principalPaid": 24005.85,
+          "principalLeft": 135058.02
+        },
+        {
+          "date": "11-08-2024",
+          "emiPaid": 25000,
+          "interestPaid": 844.11,
+          "principalPaid": 24155.89,
+          "principalLeft": 110902.13
+        },
+        {
+          "date": "11-09-2024",
+          "emiPaid": 25000,
+          "interestPaid": 693.14,
+          "principalPaid": 24306.86,
+          "principalLeft": 86595.27
+        },
+        {
+          "date": "11-10-2024",
+          "emiPaid": 25000,
+          "interestPaid": 541.23,
+          "principalPaid": 24458.77,
+          "principalLeft": 62136.5
+        },
+        {
+          "date": "11-11-2024",
+          "emiPaid": 25000,
+          "interestPaid": 388.38,
+          "principalPaid": 24611.62,
+          "principalLeft": 37524.88
+        },
+        {
+          "date": "11-12-2024",
+          "emiPaid": 25000,
+          "interestPaid": 234.56,
+          "principalPaid": 24765.44,
+          "principalLeft": 12759.44
+        },
+        {
+          "date": "11-01-2025",
+          "emiPaid": 12759.44,
+          "interestPaid": 79.75,
+          "principalPaid": 12679.69,
+          "principalLeft": 0
+        }
       ]
     },
     {
-      "id": 12,
+      "id": 12,    
       "loanAccountNumber": "10000000145678",
       "loanType": "mortgage",
       "loanAmount": "800000",
@@ -317,7 +1183,101 @@
       "loanStartDate": "12-01-2024",
       "loanEndDate": "12-01-2034",
       "loanStatus": "active",
-      "username": "username3"
+      "username": "username3",
+      "interestPercentage": 8.0,
+      "loanHistory": [
+        {
+          "date": "12-01-2024",
+          "emiPaid": 40000,
+          "interestPaid": 5333.33,
+          "principalPaid": 34666.67,
+          "principalLeft": 765333.33
+        },
+        {
+          "date": "12-02-2024",
+          "emiPaid": 40000,
+          "interestPaid": 5102.22,
+          "principalPaid": 34897.78,
+          "principalLeft": 730435.55
+        },
+        {
+          "date": "12-03-2024",
+          "emiPaid": 40000,
+          "interestPaid": 4870.29,
+          "principalPaid": 35129.71,
+          "principalLeft": 695305.84
+        },
+        {
+          "date": "12-04-2024",
+          "emiPaid": 40000,
+          "interestPaid": 4637.37,
+          "principalPaid": 35362.63,
+          "principalLeft": 659943.21
+        },
+        {
+          "date": "12-05-2024",
+          "emiPaid": 40000,
+          "interestPaid": 4403.29,
+          "principalPaid": 35596.71,
+          "principalLeft": 624346.5
+        },
+        {
+          "date": "12-06-2024",
+          "emiPaid": 40000,
+          "interestPaid": 4168.08,
+          "principalPaid": 35831.92,
+          "principalLeft": 588514.58
+        },
+        {
+          "date": "12-07-2024",
+          "emiPaid": 40000,
+          "interestPaid": 3931.72,
+          "principalPaid": 36068.28,
+          "principalLeft": 552446.3
+        },
+        {
+          "date": "12-08-2024",
+          "emiPaid": 40000,
+          "interestPaid": 3694.21,
+          "principalPaid": 36305.79,
+          "principalLeft": 516140.51
+        },
+        {
+          "date": "12-09-2024",
+          "emiPaid": 40000,
+          "interestPaid": 3455.54,
+          "principalPaid": 36544.46,
+          "principalLeft": 479596.05
+        },
+        {
+          "date": "12-10-2024",
+          "emiPaid": 40000,
+          "interestPaid": 3215.71,
+          "principalPaid": 36784.29,
+          "principalLeft": 442811.76
+        },
+        {
+          "date": "12-11-2024",
+          "emiPaid": 40000,
+          "interestPaid": 2974.71,
+          "principalPaid": 37025.29,
+          "principalLeft": 405786.47
+        },
+        {
+          "date": "12-12-2024",
+          "emiPaid": 40000,
+          "interestPaid": 2732.54,
+          "principalPaid": 37267.46,
+          "principalLeft": 368518.99
+        },
+        {
+          "date": "12-01-2025",
+          "emiPaid": 40000,
+          "interestPaid": 2489.19,
+          "principalPaid": 37510.81,
+          "principalLeft": 331008.18
+        }
+      ]
     },
     {
       "id": 13,
@@ -328,7 +1288,101 @@
       "loanStartDate": "13-01-2024",
       "loanEndDate": "13-01-2026",
       "loanStatus": "active",
-      "username": "username4"
+      "username": "username4",
+      "interestPercentage": 7.5,
+      "loanHistory": [
+        {
+          "date": "13-01-2024",
+          "emiPaid": 14000,
+          "interestPaid": 1000,
+          "principalPaid": 13000,
+          "principalLeft": 147000
+        },
+        {
+          "date": "13-02-2024",
+          "emiPaid": 14000,
+          "interestPaid": 918.75,
+          "principalPaid": 13081.25,
+          "principalLeft": 133918.75
+        },
+        {
+          "date": "13-03-2024",
+          "emiPaid": 14000,
+          "interestPaid": 836.99,
+          "principalPaid": 13163.01,
+          "principalLeft": 120755.74
+        },
+        {
+          "date": "13-04-2024",
+          "emiPaid": 14000,
+          "interestPaid": 754.72,
+          "principalPaid": 13245.28,
+          "principalLeft": 107510.46
+        },
+        {
+          "date": "13-05-2024",
+          "emiPaid": 14000,
+          "interestPaid": 671.94,
+          "principalPaid": 13328.06,
+          "principalLeft": 94182.4
+        },
+        {
+          "date": "13-06-2024",
+          "emiPaid": 14000,
+          "interestPaid": 588.64,
+          "principalPaid": 13411.36,
+          "principalLeft": 80771.04
+        },
+        {
+          "date": "13-07-2024",
+          "emiPaid": 14000,
+          "interestPaid": 504.82,
+          "principalPaid": 13495.18,
+          "principalLeft": 67275.86
+        },
+        {
+          "date": "13-08-2024",
+          "emiPaid": 14000,
+          "interestPaid": 420.47,
+          "principalPaid": 13579.53,
+          "principalLeft": 53700.33
+        },
+        {
+          "date": "13-09-2024",
+          "emiPaid": 14000,
+          "interestPaid": 335.63,
+          "principalPaid": 13664.37,
+          "principalLeft": 40035.96
+        },
+        {
+          "date": "13-10-2024",
+          "emiPaid": 14000,
+          "interestPaid": 250.22,
+          "principalPaid": 13749.78,
+          "principalLeft": 26286.18
+        },
+        {
+          "date": "13-11-2024",
+          "emiPaid": 14000,
+          "interestPaid": 164.29,
+          "principalPaid": 13835.71,
+          "principalLeft": 12450.47
+        },
+        {
+          "date": "13-12-2024",
+          "emiPaid": 12450.47,
+          "interestPaid": 77.82,
+          "principalPaid": 12372.65,
+          "principalLeft": 77.82
+        },
+        {
+          "date": "13-01-2025",
+          "emiPaid": 77.82,
+          "interestPaid": 0.49,
+          "principalPaid": 77.33,
+          "principalLeft": 0
+        }
+      ]
     },
     {
       "id": 14,
@@ -339,7 +1393,102 @@
       "loanStartDate": "14-01-2024",
       "loanEndDate": "14-01-2025",
       "loanStatus": "closed",
-      "username": "username4"
+      "username": "username4",
+      "interestPercentage": 7.0,
+      "loanHistory": [
+        {
+          "date": "14-01-2024",
+          "emiPaid": 10000,
+          "interestPaid": 700,
+          "principalPaid": 9300,
+          "principalLeft": 110700
+        },
+        {
+          "date": "14-02-2024",
+          "emiPaid": 10000,
+          "interestPaid": 644.08,
+          "principalPaid": 9355.92,
+          "principalLeft": 101344.08
+        },
+        {
+          "date": "14-03-2024",
+          "emiPaid": 10000,
+          "interestPaid": 589.52,
+          "principalPaid": 9410.48,
+          "principalLeft": 91933.6
+        },
+        {
+          "date": "14-04-2024",
+          "emiPaid": 10000,
+          "interestPaid": 536.17,
+          "principalPaid": 9463.83,
+          "principalLeft": 82469.77
+        },
+        {
+          "date": "14-05-2024",
+          "emiPaid": 10000,
+          "interestPaid": 484.07,
+          "principalPaid": 9515.93,
+          "principalLeft": 72953.84
+        },
+        {
+          "date": "14-06-2024",
+          "emiPaid": 10000,
+          "interestPaid": 433.12,
+          "principalPaid": 9566.88,
+          "principalLeft": 63386.96
+        },
+        {
+          "date": "14-07-2024",
+          "emiPaid": 10000,
+          "interestPaid": 383.26,
+          "principalPaid": 9616.74,
+          "principalLeft": 53770.22
+        },
+        {
+          "date": "14-08-2024",
+          "emiPaid": 10000,
+          "interestPaid": 334.39,
+          "principalPaid": 9665.61,
+          "principalLeft": 44004.61
+        },
+        {
+          "date": "14-09-2024",
+          "emiPaid": 10000,
+          "interestPaid": 286.53,
+          "principalPaid": 9713.47,
+          "principalLeft": 34191.14
+        },
+        {
+          "date": "14-10-2024",
+          "emiPaid": 10000,
+          "interestPaid": 239.64,
+          "principalPaid": 9760.36,
+          "principalLeft": 24330.78
+        },
+        {
+          "date": "14-11-2024",
+          "emiPaid": 10000,
+          "interestPaid": 193.67,
+          "principalPaid": 9806.33,
+          "principalLeft": 14424.45
+        },
+        {
+          "date": "14-12-2024",
+          "emiPaid": 10000,
+          "interestPaid": 148.55,
+          "principalPaid": 9851.45,
+          "principalLeft": 4462.99
+        },
+        {
+          "date": "14-01-2025",
+          "emiPaid": 4462.99,
+          "interestPaid": 26.71,
+          "principalPaid": 4436.28,
+          "principalLeft": 0
+        }
+      ]
+     
     },
     {
       "id": 15,
@@ -350,7 +1499,101 @@
       "loanStartDate": "15-01-2024",
       "loanEndDate": "15-01-2034",
       "loanStatus": "active",
-      "username": "username4"
+      "username": "username4",      
+      "interestPercentage": 8.0,
+      "loanHistory": [
+        {
+          "date": "15-01-2024",
+          "emiPaid": 45000,
+          "interestPaid": 6000,
+          "principalPaid": 39000,
+          "principalLeft": 861000
+        },
+        {
+          "date": "15-02-2024",
+          "emiPaid": 45000,
+          "interestPaid": 5740,
+          "principalPaid": 39260,
+          "principalLeft": 821740
+        },
+        {
+          "date": "15-03-2024",
+          "emiPaid": 45000,
+          "interestPaid": 5481.16,
+          "principalPaid": 39518.84,
+          "principalLeft": 782221.16
+        },
+        {
+          "date": "15-04-2024",
+          "emiPaid": 45000,
+          "interestPaid": 5221.47,
+          "principalPaid": 39778.53,
+          "principalLeft": 742442.63
+        },
+        {
+          "date": "15-05-2024",
+          "emiPaid": 45000,
+          "interestPaid": 4960.95,
+          "principalPaid": 40039.05,
+          "principalLeft": 702403.58
+        },
+        {
+          "date": "15-06-2024",
+          "emiPaid": 45000,
+          "interestPaid": 4699.36,
+          "principalPaid": 40300.64,
+          "principalLeft": 662102.94
+        },
+        {
+          "date": "15-07-2024",
+          "emiPaid": 45000,
+          "interestPaid": 4436.02,
+          "principalPaid": 40563.98,
+          "principalLeft": 621538.96
+        },
+        {
+          "date": "15-08-2024",
+          "emiPaid": 45000,
+          "interestPaid": 4170.26,
+          "principalPaid": 40829.74,
+          "principalLeft": 580709.22
+        },
+        {
+          "date": "15-09-2024",
+          "emiPaid": 45000,
+          "interestPaid": 3902.06,
+          "principalPaid": 41097.94,
+          "principalLeft": 539611.28
+        },
+        {
+          "date": "15-10-2024",
+          "emiPaid": 45000,
+          "interestPaid": 3631.41,
+          "principalPaid": 41368.59,
+          "principalLeft": 498242.69
+        },
+        {
+          "date": "15-11-2024",
+          "emiPaid": 45000,
+          "interestPaid": 3358.28,
+          "principalPaid": 41641.72,
+          "principalLeft": 456600.97
+        },
+        {
+          "date": "15-12-2024",
+          "emiPaid": 45000,
+          "interestPaid": 3082.67,
+          "principalPaid": 41917.33,
+          "principalLeft": 414683.64
+        },
+        {
+          "date": "15-01-2025",
+          "emiPaid": 45000,
+          "interestPaid": 2804.56,
+          "principalPaid": 42195.44,
+          "principalLeft": 372488.2
+        }
+      ]
     },
     {
       "id": 16,
@@ -361,7 +1604,102 @@
       "loanStartDate": "16-01-2024",
       "loanEndDate": "16-01-2027",
       "loanStatus": "active",
-      "username": "username4"
+      "username": "username4",      
+      "interestPercentage": 8.0,
+      "loanHistory": [
+        {
+          "date": "16-01-2024",
+          "emiPaid": 17000,
+          "interestPaid": 1333.33,
+          "principalPaid": 15666.67,
+          "principalLeft": 184333.33
+        },
+        {
+          "date": "16-02-2024",
+          "emiPaid": 17000,
+          "interestPaid": 1228.89,
+          "principalPaid": 15771.11,
+          "principalLeft": 168562.22
+        },
+        {
+          "date": "16-03-2024",
+          "emiPaid": 17000,
+          "interestPaid": 1123.75,
+          "principalPaid": 15876.25,
+          "principalLeft": 152685.97
+        },
+        {
+          "date": "16-04-2024",
+          "emiPaid": 17000,
+          "interestPaid": 1017.91,
+          "principalPaid": 15982.09,
+          "principalLeft": 136703.88
+        },
+        {
+          "date": "16-05-2024",
+          "emiPaid": 17000,
+          "interestPaid": 911.36,
+          "principalPaid": 16088.64,
+          "principalLeft": 120615.24
+        },
+        {
+          "date": "16-06-2024",
+          "emiPaid": 17000,
+          "interestPaid": 804.10,
+          "principalPaid": 16195.90,
+          "principalLeft": 104419.34
+        },
+        {
+          "date": "16-07-2024",
+          "emiPaid": 17000,
+          "interestPaid": 696.13,
+          "principalPaid": 16303.87,
+          "principalLeft": 88115.47
+        },
+        {
+          "date": "16-08-2024",
+          "emiPaid": 17000,
+          "interestPaid": 587.44,
+          "principalPaid": 16412.56,
+          "principalLeft": 71602.91
+        },
+        {
+          "date": "16-09-2024",
+          "emiPaid": 17000,
+          "interestPaid": 478.02,
+          "principalPaid": 16521.98,
+          "principalLeft": 55080.93
+        },
+        {
+          "date": "16-10-2024",
+          "emiPaid": 17000,
+          "interestPaid": 367.87,
+          "principalPaid": 16632.13,
+          "principalLeft": 38448.80
+        },
+        {
+          "date": "16-11-2024",
+          "emiPaid": 17000,
+          "interestPaid": 257.00,
+          "principalPaid": 16743.00,
+          "principalLeft": 21705.80
+        },
+        {
+          "date": "16-12-2024",
+          "emiPaid": 17000,
+          "interestPaid": 145.37,
+          "principalPaid": 16854.63,
+          "principalLeft": 4861.17
+        },
+        {
+          "date": "16-01-2025",
+          "emiPaid": 4861.17,
+          "interestPaid": 32.41,
+          "principalPaid": 4828.76,
+          "principalLeft": 0
+        }
+      ]
+      
     },
     {
       "id": 17,
@@ -372,7 +1710,102 @@
       "loanStartDate": "17-01-2024",
       "loanEndDate": "17-01-2026",
       "loanStatus": "active",
-      "username": "username5"
+      "username": "username5",
+      "interestPercentage": 7.5,
+      "loanHistory": [
+        {
+          "date": "17-01-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1562.5,
+          "principalPaid": 18437.5,
+          "principalLeft": 231562.5
+        },
+        {
+          "date": "17-02-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1447.27,
+          "principalPaid": 18552.73,
+          "principalLeft": 213009.77
+        },
+        {
+          "date": "17-03-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1331.31,
+          "principalPaid": 18668.69,
+          "principalLeft": 194341.08
+        },
+        {
+          "date": "17-04-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1214.63,
+          "principalPaid": 18785.37,
+          "principalLeft": 175555.71
+        },
+        {
+          "date": "17-05-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1097.22,
+          "principalPaid": 18902.78,
+          "principalLeft": 156652.93
+        },
+        {
+          "date": "17-06-2024",
+          "emiPaid": 20000,
+          "interestPaid": 979.08,
+          "principalPaid": 19020.92,
+          "principalLeft": 137631.99
+        },
+        {
+          "date": "17-07-2024",
+          "emiPaid": 20000,
+          "interestPaid": 860.2,
+          "principalPaid": 19139.8,
+          "principalLeft": 118492.19
+        },
+        {
+          "date": "17-08-2024",
+          "emiPaid": 20000,
+          "interestPaid": 740.58,
+          "principalPaid": 19259.42,
+          "principalLeft": 99232.77
+        },
+        {
+          "date": "17-09-2024",
+          "emiPaid": 20000,
+          "interestPaid": 620.2,
+          "principalPaid": 19379.8,
+          "principalLeft": 79853.0
+        },
+        {
+          "date": "17-10-2024",
+          "emiPaid": 20000,
+          "interestPaid": 499.08,
+          "principalPaid": 19500.92,
+          "principalLeft": 60352.08
+        },
+        {
+          "date": "17-11-2024",
+          "emiPaid": 20000,
+          "interestPaid": 377.2,
+          "principalPaid": 19622.8,
+          "principalLeft": 40729.28
+        },
+        {
+          "date": "17-12-2024",
+          "emiPaid": 20000,
+          "interestPaid": 254.56,
+          "principalPaid": 19745.44,
+          "principalLeft": 20983.84
+        },
+        {
+          "date": "17-01-2025",
+          "emiPaid": 20000,
+          "interestPaid": 131.15,
+          "principalPaid": 19868.85,
+          "principalLeft": 1114.99
+        }
+      ]
+   
     },
     {
       "id": 18,
@@ -383,7 +1816,102 @@
       "loanStartDate": "18-01-2024",
       "loanEndDate": "18-01-2034",
       "loanStatus": "active",
-      "username": "username5"
+      "username": "username5",
+      "interestPercentage": 8.0,
+      "loanHistory": [
+        {
+          "date": "18-01-2024",
+          "emiPaid": 50000,
+          "interestPaid": 6666.67,
+          "principalPaid": 43333.33,
+          "principalLeft": 956666.67
+        },
+        {
+          "date": "18-02-2024",
+          "emiPaid": 50000,
+          "interestPaid": 6377.78,
+          "principalPaid": 43622.22,
+          "principalLeft": 913044.45
+        },
+        {
+          "date": "18-03-2024",
+          "emiPaid": 50000,
+          "interestPaid": 6086.96,
+          "principalPaid": 43913.04,
+          "principalLeft": 869131.41
+        },
+        {
+          "date": "18-04-2024",
+          "emiPaid": 50000,
+          "interestPaid": 5794.21,
+          "principalPaid": 44205.79,
+          "principalLeft": 824925.62
+        },
+        {
+          "date": "18-05-2024",
+          "emiPaid": 50000,
+          "interestPaid": 5499.50,
+          "principalPaid": 44500.50,
+          "principalLeft": 780425.12
+        },
+        {
+          "date": "18-06-2024",
+          "emiPaid": 50000,
+          "interestPaid": 5202.83,
+          "principalPaid": 44797.17,
+          "principalLeft": 735627.95
+        },
+        {
+          "date": "18-07-2024",
+          "emiPaid": 50000,
+          "interestPaid": 4904.19,
+          "principalPaid": 45095.81,
+          "principalLeft": 690532.14
+        },
+        {
+          "date": "18-08-2024",
+          "emiPaid": 50000,
+          "interestPaid": 4603.55,
+          "principalPaid": 45396.45,
+          "principalLeft": 645135.69
+        },
+        {
+          "date": "18-09-2024",
+          "emiPaid": 50000,
+          "interestPaid": 4300.90,
+          "principalPaid": 45699.10,
+          "principalLeft": 599436.59
+        },
+        {
+          "date": "18-10-2024",
+          "emiPaid": 50000,
+          "interestPaid": 3996.24,
+          "principalPaid": 46003.76,
+          "principalLeft": 553432.83
+        },
+        {
+          "date": "18-11-2024",
+          "emiPaid": 50000,
+          "interestPaid": 3689.55,
+          "principalPaid": 46310.45,
+          "principalLeft": 507122.38
+        },
+        {
+          "date": "18-12-2024",
+          "emiPaid": 50000,
+          "interestPaid": 3380.82,
+          "principalPaid": 46619.18,
+          "principalLeft": 460503.20
+        },
+        {
+          "date": "18-01-2025",
+          "emiPaid": 50000,
+          "interestPaid": 3070.02,
+          "principalPaid": 46929.98,
+          "principalLeft": 413573.22
+        }
+      ]
+     
     },
     {
       "id": 19,
@@ -394,7 +1922,94 @@
       "loanStartDate": "19-01-2024",
       "loanEndDate": "19-01-2027",
       "loanStatus": "active",
-      "username": "username5"
+      "username": "username5",
+      "interestPercentage": 7.5,
+      "loanHistory": [
+        {
+          "date": "19-01-2024",
+          "emiPaid": 20000,
+          "interestPaid": 2200,
+          "principalPaid": 17800,
+          "principalLeft": 202200
+        },
+        {
+          "date": "19-02-2024",
+          "emiPaid": 20000,
+          "interestPaid": 2022,
+          "principalPaid": 17978,
+          "principalLeft": 184222
+        },
+        {
+          "date": "19-03-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1842.22,
+          "principalPaid": 18157.78,
+          "principalLeft": 166064.22
+        },
+        {
+          "date": "19-04-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1660.64,
+          "principalPaid": 18339.36,
+          "principalLeft": 147724.86
+        },
+        {
+          "date": "19-05-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1477.25,
+          "principalPaid": 18522.75,
+          "principalLeft": 129202.11
+        },
+        {
+          "date": "19-06-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1292.02,
+          "principalPaid": 18707.98,
+          "principalLeft": 110494.13
+        },
+        {
+          "date": "19-07-2024",
+          "emiPaid": 20000,
+          "interestPaid": 1104.94,
+          "principalPaid": 18895.06,
+          "principalLeft": 91600.07
+        },
+        {
+          "date": "19-08-2024",
+          "emiPaid": 20000,
+          "interestPaid": 916,
+          "principalPaid": 19084,
+          "principalLeft": 72516.07
+        },
+        {
+          "date": "19-09-2024",
+          "emiPaid": 20000,
+          "interestPaid": 725.16,
+          "principalPaid": 19274.84,
+          "principalLeft": 53241.23
+        },
+        {
+          "date": "19-10-2024",
+          "emiPaid": 20000,
+          "interestPaid": 532.41,
+          "principalPaid": 19467.59,
+          "principalLeft": 33773.64
+        },
+        {
+          "date": "19-11-2024",
+          "emiPaid": 20000,
+          "interestPaid": 337.74,
+          "principalPaid": 19662.26,
+          "principalLeft": 14111.38
+        },
+        {
+          "date": "19-12-2024",
+          "emiPaid": 20000,
+          "interestPaid": 141.11,
+          "principalPaid": 19858.89,
+          "principalLeft": 0
+        }
+      ]
     },
     {
       "id": 20,
@@ -405,7 +2020,94 @@
       "loanStartDate": "20-01-2024",
       "loanEndDate": "20-01-2025",
       "loanStatus": "closed",
-      "username": "username5"
+      "username": "username5",
+      "interestPercentage": 7.0,
+      "loanHistory": [
+        {
+          "date": "20-01-2024",
+          "emiPaid": 9000,
+          "interestPaid": 583.33,
+          "principalPaid": 8416.67,
+          "principalLeft": 91583.33
+        },
+        {
+          "date": "20-02-2024",
+          "emiPaid": 9000,
+          "interestPaid": 534.24,
+          "principalPaid": 8465.76,
+          "principalLeft": 83117.57
+        },
+        {
+          "date": "20-03-2024",
+          "emiPaid": 9000,
+          "interestPaid": 485.69,
+          "principalPaid": 8514.31,
+          "principalLeft": 74603.26
+        },
+        {
+          "date": "20-04-2024",
+          "emiPaid": 9000,
+          "interestPaid": 436.85,
+          "principalPaid": 8563.15,
+          "principalLeft": 66040.11
+        },
+        {
+          "date": "20-05-2024",
+          "emiPaid": 9000,
+          "interestPaid": 387.73,
+          "principalPaid": 8612.27,
+          "principalLeft": 57427.84
+        },
+        {
+          "date": "20-06-2024",
+          "emiPaid": 9000,
+          "interestPaid": 338.33,
+          "principalPaid": 8661.67,
+          "principalLeft": 48766.17
+        },
+        {
+          "date": "20-07-2024",
+          "emiPaid": 9000,
+          "interestPaid": 288.79,
+          "principalPaid": 8711.21,
+          "principalLeft": 40054.96
+        },
+        {
+          "date": "20-08-2024",
+          "emiPaid": 9000,
+          "interestPaid": 239.02,
+          "principalPaid": 8760.98,
+          "principalLeft": 31293.98
+        },
+        {
+          "date": "20-09-2024",
+          "emiPaid": 9000,
+          "interestPaid": 189.05,
+          "principalPaid": 8810.95,
+          "principalLeft": 22483.03
+        },
+        {
+          "date": "20-10-2024",
+          "emiPaid": 9000,
+          "interestPaid": 138.88,
+          "principalPaid": 8861.12,
+          "principalLeft": 13621.91
+        },
+        {
+          "date": "20-11-2024",
+          "emiPaid": 9000,
+          "interestPaid": 88.48,
+          "principalPaid": 8911.52,
+          "principalLeft": 4709.39
+        },
+        {
+          "date": "20-12-2024",
+          "emiPaid": 4709.39,
+          "interestPaid": 27.46,
+          "principalPaid": 4681.93,
+          "principalLeft": 0
+        }
+      ]
     }
   ]
 }

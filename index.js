@@ -246,6 +246,76 @@ app.post("/resetPassword", (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /user:
+ *   get:
+ *     summary: Retrieve user details
+ *     parameters:
+ *       - in: query
+ *         name: username
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: Username of the user
+ *     responses:
+ *       200:
+ *         description: Successful response
+ *       404:
+ *         description: User not found
+ */
+app.get("/user", (req, res) => {
+  const { username } = req.query;
+  const user = users.find((u) => u.username === username);
+  if (user) {
+    res.status(200).send({"name":user.username,"email":user.email});
+  } else {
+    res.status(404).send("User not found");
+  }
+});
+
+/**
+ * @swagger
+ * /prepay:
+ *   post:
+ *     summary: Make a prepayment on a loan
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               loanId:
+ *                 type: integer
+ *               amount:
+ *                 type: number
+ *     responses:
+ *       200:
+ *         description: Prepayment successful
+ *       404:
+ *         description: Loan not found
+ */
+app.post("/prepay", (req, res) => {
+  const { loanId, amount } = req.body;
+  const loan = loans.find((l) => l.id === loanId);
+  if (loan) {        
+    loan.history.push({
+      "date": new Date().toISOString(),
+      "emiPaid": "0",
+      "interestPaid": "0",
+      "principalPaid": amount,
+      "principalLeft": loan.history[loan.history.length - 1].principalLeft - amount,      
+    });
+    fs.writeFile("db.json", JSON.stringify({ users, loans }, null, 2), (err) => {
+      if (err) throw err;
+      console.log("db.json has been updated!");
+    });
+    res.status(200).send({ status: true, message: "Prepayment successful", newBalance: loan.balance });
+  } else {
+    res.status(404).send({ status: false, message: "Loan not found" });
+  }
+});
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
