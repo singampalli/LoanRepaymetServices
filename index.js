@@ -299,14 +299,19 @@ app.get("/user", (req, res) => {
 app.post("/prepay", (req, res) => {
   const { loanId, amount } = req.body;
   const loan = loans.find((l) => l.id === loanId);
+  const principalLeft= loan.history[loan.history.length - 1].principalLeft - amount;
+  if(principalLeft==0){
+    loan.status = "closed"
+  }
   if (loan) {        
     loan.history.push({
       "date": new Date().toISOString(),
       "emiPaid": "0",
       "interestPaid": "0",
       "principalPaid": amount,
-      "principalLeft": loan.history[loan.history.length - 1].principalLeft - amount,      
+      "principalLeft": principalLeft,      
     });
+
     fs.writeFile("db.json", JSON.stringify({ users, loans }, null, 2), (err) => {
       if (err) throw err;
       console.log("db.json has been updated!");
