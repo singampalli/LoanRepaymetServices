@@ -314,7 +314,7 @@ app.post("/prepay", (req, res) => {
   }
   if (loan) {
     loan.loanHistory.push({
-      date: new Date().toISOString(),
+      date: new Date().toISOString().split('T')[0],
       emiPaid: "0",
       interestPaid: "0",
       principalPaid: amount,
