@@ -40,7 +40,7 @@
   "loans": [
     {
       "id": 1,
-      "loanAccountNumber": "10000000987654",
+      "loanAccountNumber": "1000987654",
       "loanType": "car",
       "loanAmount": "100000",
       "loanEMI": "9999",
@@ -131,7 +131,7 @@
     },
     {
       "id": 2,
-      "loanAccountNumber": "10000000234567",
+      "loanAccountNumber": "1000234567",
       "loanType": "personal",
       "loanAmount": "200000",
       "loanEMI": "15000",
@@ -236,7 +236,7 @@
     },
     {
       "id": 3,
-      "loanAccountNumber": "10000000345678",
+      "loanAccountNumber": "1000345678",
       "loanType": "mortgage",
       "loanAmount": "5000000",
       "loanEMI": "25000",
@@ -362,7 +362,7 @@
     },
     {
       "id": 4,
-      "loanAccountNumber": "10000000456789",
+      "loanAccountNumber": "1000456789",
       "loanType": "car",
       "loanAmount": "150000",
       "loanEMI": "8000",
@@ -467,7 +467,7 @@
     },
     {
       "id": 5,
-      "loanAccountNumber": "10000000567890",
+      "loanAccountNumber": "1000567890",
       "loanType": "personal",
       "loanAmount": "80000",
       "loanEMI": "6000",
@@ -572,7 +572,7 @@
     },
     {
       "id": 6,
-      "loanAccountNumber": "10000000678901",
+      "loanAccountNumber": "1000678901",
       "loanType": "mortgage",
       "loanAmount": "700000",
       "loanEMI": "35000",
@@ -677,7 +677,7 @@
     },
     {
       "id": 7,
-      "loanAccountNumber": "10000000789012",
+      "loanAccountNumber": "1000789012",
       "loanType": "car",
       "loanAmount": "120000",
       "loanEMI": "11000",
@@ -775,7 +775,7 @@
     },
     {
       "id": 8,
-      "loanAccountNumber": "10000000890123",
+      "loanAccountNumber": "1000890123",
       "loanType": "personal",
       "loanAmount": "50000",
       "loanEMI": "4000",
@@ -880,7 +880,7 @@
     },
     {
       "id": 9,
-      "loanAccountNumber": "10000000901234",
+      "loanAccountNumber": "1000901234",
       "loanType": "mortgage",
       "loanAmount": "600000",
       "loanEMI": "30000",
@@ -985,7 +985,7 @@
     },
     {
       "id": 10,
-      "loanAccountNumber": "10000000123456",
+      "loanAccountNumber": "1000123456",
       "loanType": "car",
       "loanAmount": "180000",
       "loanEMI": "15000",
@@ -1090,7 +1090,7 @@
     },
     {
       "id": 11,
-      "loanAccountNumber": "10000000134567",
+      "loanAccountNumber": "1000134567",
       "loanType": "personal",
       "loanAmount": "300000",
       "loanEMI": "25000",
@@ -1195,7 +1195,7 @@
     },
     {
       "id": 12,
-      "loanAccountNumber": "10000000145678",
+      "loanAccountNumber": "1000145678",
       "loanType": "mortgage",
       "loanAmount": "800000",
       "loanEMI": "40000",
@@ -1300,7 +1300,7 @@
     },
     {
       "id": 13,
-      "loanAccountNumber": "10000000156789",
+      "loanAccountNumber": "1000156789",
       "loanType": "car",
       "loanAmount": "160000",
       "loanEMI": "14000",
@@ -1405,7 +1405,7 @@
     },
     {
       "id": 14,
-      "loanAccountNumber": "10000000167890",
+      "loanAccountNumber": "1000167890",
       "loanType": "personal",
       "loanAmount": "120000",
       "loanEMI": "10000",
@@ -1510,7 +1510,7 @@
     },
     {
       "id": 15,
-      "loanAccountNumber": "10000000178901",
+      "loanAccountNumber": "1000178901",
       "loanType": "mortgage",
       "loanAmount": "900000",
       "loanEMI": "45000",
@@ -1615,7 +1615,7 @@
     },
     {
       "id": 16,
-      "loanAccountNumber": "10000000189012",
+      "loanAccountNumber": "1000189012",
       "loanType": "car",
       "loanAmount": "200000",
       "loanEMI": "17000",
@@ -1720,7 +1720,7 @@
     },
     {
       "id": 17,
-      "loanAccountNumber": "10000000190123",
+      "loanAccountNumber": "1000190123",
       "loanType": "personal",
       "loanAmount": "250000",
       "loanEMI": "20000",
@@ -1825,7 +1825,7 @@
     },
     {
       "id": 18,
-      "loanAccountNumber": "10000000201234",
+      "loanAccountNumber": "1000201234",
       "loanType": "mortgage",
       "loanAmount": "1000000",
       "loanEMI": "50000",
@@ -1930,7 +1930,7 @@
     },
     {
       "id": 19,
-      "loanAccountNumber": "10000000212345",
+      "loanAccountNumber": "1000212345",
       "loanType": "car",
       "loanAmount": "220000",
       "loanEMI": "20000",
@@ -2028,7 +2028,7 @@
     },
     {
       "id": 20,
-      "loanAccountNumber": "10000000223456",
+      "loanAccountNumber": "1000223456",
       "loanType": "personal",
       "loanAmount": "100000",
       "loanEMI": "9000",
