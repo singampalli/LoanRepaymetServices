@@ -309,8 +309,8 @@ app.post("/prepay", (req, res) => {
   const loan = loans.find((l) => l.id == loanId);
   const principalLeft =
     loan.loanHistory[loan.loanHistory.length - 1].principalLeft - amount;
-  if (principalLeft == 0) {
-    loan.status = "closed";
+  if (principalLeft <= 0) {
+    loan.loanStatus = "closed";
   }
   if (loan) {
     const date = new Date();
