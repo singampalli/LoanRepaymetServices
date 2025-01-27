@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 const swaggerOptions = {
   swaggerDefinition: {
-    openapi: '3.0.0',
+    openapi: "3.0.0",
     info: {
       title: "Loan API",
       version: "1.0.0",
@@ -41,7 +41,7 @@ SaveData = (username, email, password) => {
     email: email,
     Password: password,
   });
-  const db = { users,loans };
+  const db = { users, loans };
   fs.writeFile("db.json", JSON.stringify(db, null, 2), (err) => {
     if (err) throw err;
     console.log("db.json has been saved!");
@@ -73,12 +73,12 @@ SaveData = (username, email, password) => {
 app.post("/loans", (req, res) => {
   const { username, status } = req.body;
   console.log(username, status);
-  const userloans = loans.filter((loan) => loan.username === username && loan.loanStatus === status);
-  const response = { data: userloans, total: userloans.length }
-  if (userloans.length > 0)
-    res.status(200).send(response);
-  else
-    res.status(201).send(response);
+  const userloans = loans.filter(
+    (loan) => loan.username === username && loan.loanStatus === status
+  );
+  const response = { data: userloans, total: userloans.length };
+  if (userloans.length > 0) res.status(200).send(response);
+  else res.status(201).send(response);
 });
 
 /**
@@ -104,10 +104,8 @@ app.post("/loans", (req, res) => {
 app.post("/loan", (req, res) => {
   const { loanId } = req.body;
   const loandDetails = loans.filter((loan) => loan.id == loanId);
-  if (loandDetails.length > 0)
-    res.status(200).send(loandDetails);
-  else
-    res.status(201).send(loandDetails);
+  if (loandDetails.length > 0) res.status(200).send(loandDetails);
+  else res.status(201).send(loandDetails);
 });
 
 /**
@@ -136,7 +134,9 @@ app.post("/register", (req, res) => {
   const { username, email, password } = req.body;
   const hashedPassword = bcrypt.hashSync(password, 8);
   SaveData(username, email, hashedPassword);
-  res.status(201).send({status:true,message:"User registered successfully"});
+  res
+    .status(201)
+    .send({ status: true, message: "User registered successfully" });
 });
 
 /**
@@ -163,7 +163,7 @@ app.post("/register", (req, res) => {
  */
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
-  console.log(username, password)
+  console.log(username, password);
   const user = users.find((u) => u.username === username);
   if (user && bcrypt.compareSync(password, user.Password)) {
     const token = jwt.sign({ id: user.username }, "supersecretkey", {
@@ -197,7 +197,7 @@ app.post("/login", (req, res) => {
  */
 app.post("/forgotPassword", (req, res) => {
   const { email } = req.body;
-  const resetCode = Math.floor(1000 + Math.random() * 9000);;
+  const resetCode = Math.floor(1000 + Math.random() * 9000);
   console.log(resetCode);
   const user = users.find((u) => u.email === email);
   if (user) {
@@ -232,17 +232,25 @@ app.post("/forgotPassword", (req, res) => {
  */
 app.post("/resetPassword", (req, res) => {
   const { userEmail, password } = req.body;
-  console.log(userEmail, password)
+  console.log(userEmail, password);
   const user = users.find((u) => u.email === userEmail);
   if (user) {
     user.Password = bcrypt.hashSync(password, 8);
-    fs.writeFile("db.json", JSON.stringify({ users, loans }, null, 2), (err) => {
-      if (err) throw err;
-      console.log("db.json has been updated!");
-    });
-    res.status(200).send({ status: true, message: "Password reset successfully" });
+    fs.writeFile(
+      "db.json",
+      JSON.stringify({ users, loans }, null, 2),
+      (err) => {
+        if (err) throw err;
+        console.log("db.json has been updated!");
+      }
+    );
+    res
+      .status(200)
+      .send({ status: true, message: "Password reset successfully" });
   } else {
-    res.status(404).send({ status: false, message: "Password reset successfully" });
+    res
+      .status(404)
+      .send({ status: false, message: "Password reset successfully" });
   }
 });
 
@@ -268,7 +276,7 @@ app.get("/user", (req, res) => {
   const { username } = req.query;
   const user = users.find((u) => u.username === username);
   if (user) {
-    res.status(200).send({"name":user.username,"email":user.email});
+    res.status(200).send({ name: user.username, email: user.email });
   } else {
     res.status(404).send("User not found");
   }
@@ -298,25 +306,36 @@ app.get("/user", (req, res) => {
  */
 app.post("/prepay", (req, res) => {
   const { loanId, amount } = req.body;
-  const loan = loans.find((l) => l.id === loanId);
-  const principalLeft= loan.history[loan.history.length - 1].principalLeft - amount;
-  if(principalLeft==0){
-    loan.status = "closed"
+  const loan = loans.find((l) => l.id == loanId);
+  const principalLeft =
+    loan.loanHistory[loan.loanHistory.length - 1].principalLeft - amount;
+  if (principalLeft == 0) {
+    loan.status = "closed";
   }
-  if (loan) {        
-    loan.history.push({
-      "date": new Date().toISOString(),
-      "emiPaid": "0",
-      "interestPaid": "0",
-      "principalPaid": amount,
-      "principalLeft": principalLeft,      
+  if (loan) {
+    loan.loanHistory.push({
+      date: new Date().toISOString(),
+      emiPaid: "0",
+      interestPaid: "0",
+      principalPaid: amount,
+      principalLeft: principalLeft,
     });
 
-    fs.writeFile("db.json", JSON.stringify({ users, loans }, null, 2), (err) => {
-      if (err) throw err;
-      console.log("db.json has been updated!");
-    });
-    res.status(200).send({ status: true, message: "Prepayment successful", newBalance: loan.balance });
+    fs.writeFile(
+      "db.json",
+      JSON.stringify({ users, loans }, null, 2),
+      (err) => {
+        if (err) throw err;
+        console.log("db.json has been updated!");
+      }
+    );
+    res
+      .status(200)
+      .send({
+        status: true,
+        message: "Prepayment successful",
+        newBalance: loan.balance,
+      });
   } else {
     res.status(404).send({ status: false, message: "Loan not found" });
   }
