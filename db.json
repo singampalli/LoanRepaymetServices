@@ -337,12 +337,25 @@
           "principalPaid": 20927.52,
           "principalLeft": 4729934.35
         },
-        
         {
-          "date": "27-1-2025",
+          "date": "27-01-2025",
           "emiPaid": "0",
           "interestPaid": "0",
           "principalPaid": "3000",
+          "principalLeft": "4726934.35"
+        },
+        {
+          "date": "27-01-2025",
+          "emiPaid": "0",
+          "interestPaid": "0",
+          "principalPaid": "3000",
+          "principalLeft": 4723934.35
+        },
+        {
+          "date": "27-01-2025",
+          "emiPaid": 0,
+          "interestPaid": 0,
+          "principalPaid": 3000,
           "principalLeft": 4720934.35
         }
       ]
