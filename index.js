@@ -304,7 +304,7 @@ app.get("/user", (req, res) => {
  *       404:
  *         description: Loan not found
  */
-app.post("/prepay", (req, res) => {
+app.post("/prepay", (req, res) => { 
   const { loanId, amount } = req.body;
   const loan = loans.find((l) => l.id == loanId);
   const principalLeft =
