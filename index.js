@@ -313,8 +313,10 @@ app.post("/prepay", (req, res) => {
     loan.status = "closed";
   }
   if (loan) {
+    const date = new Date();
+    const formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
     loan.loanHistory.push({
-      date: new Date().toISOString().split('T')[0],
+      date: formattedDate,
       emiPaid: "0",
       interestPaid: "0",
       principalPaid: amount,
