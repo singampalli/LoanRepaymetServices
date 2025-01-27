@@ -314,13 +314,14 @@ app.post("/prepay", (req, res) => {
   }
   if (loan) {
     const date = new Date();
-    const formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+    const formattedDate = `${date.getDate()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getFullYear()}`;
+    const floatAmount = parseFloat(amount);
     loan.loanHistory.push({
       date: formattedDate,
-      emiPaid: "0",
-      interestPaid: "0",
-      principalPaid: amount,
-      principalLeft: principalLeft,
+      emiPaid: 0,
+      interestPaid: 0,
+      principalPaid: floatAmount,
+      principalLeft: principalLeft
     });
 
     fs.writeFile(
