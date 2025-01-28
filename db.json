@@ -35,12 +35,6 @@
       "username": "ansari",
       "email": "ansari@gmail.com",
       "Password": "$2a$08$0JG1xOcFnqBSKpminIa6rO5h836JC.qx4eZTBR2sGJe8DZCrAi3Yq"
-    },
-    {
-      "id": 7,
-      "username": "sandeep",
-      "email": "sandeep@gmail.com",
-      "Password": "$2a$08$kGzCBQBW8RrumwYn.Dw0uew1m8acm4xjFMkKJM6oK6cgZWJedkI9u"
     }
   ],
   "loans": [
